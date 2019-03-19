@@ -24,32 +24,27 @@ def get_page(journal, line):
             hits.remove(hit)
 
     potential_hits = []
+    potential_venue_links = []
     solid_hit = 0
 
-    venues = []
-    venue_links = []
-    potential_venue_links = []
     for name, hit in zip(names, hits):
 
         if similarity(name.text, journal) > 0.8:
-            venues.append(name.text)
-
             if "/conf" in hit.text:
-                venue_links.append(hit.text)
                 db.add_venue(name.text, hit.text, "Conference")
             else:
-                venue_links.append(hit.text)
                 db.add_venue(name.text, hit.text, "Journal")
             solid_hit = 1
             break
         else:
+            # FIX POTENTIAL HITS
             potential_hits.append("For " + journal + "Maybe: " + name.text)
             potential_hits.append(hit.text)
 
     if len(potential_hits) > 0 and solid_hit == 0:
         for hit in potential_hits:
             potential_venue_links.append(hit)
-    return venues, venue_links, potential_venue_links
+    return potential_venue_links
 
 
 def convert_lines(journals):
