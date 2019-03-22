@@ -7,6 +7,16 @@ import sqlite3
 # c.execute('''CREATE TABLE conferences (id INTEGER PRIMARY KEY AUTOINCREMENT, name text, url text UNIQUE,
 # year text, venue_id INTEGER, FOREIGN KEY(venue_id) REFERENCES venues(id)) ''')
 
+# c.execute('''CREATE TABLE papers (id INTEGER PRIMARY KEY AUTOINCREMENT, title text UNIQUE,
+# conference_id INTEGER, FOREIGN KEY(conference_id) REFERENCES conferences(id)) ''')
+#
+# c.execute('''CREATE TABLE authors (id INTEGER PRIMARY KEY AUTOINCREMENT, first_name text, last_name text,
+# url text UNIQUE, affiliation text, city text, country text) ''')
+#
+# c.execute('''CREATE TABLE authors_papers (author_id INTEGER NOT NULL, paper_id INTEGER NOT NULL,
+# PRIMARY KEY(author_id, paper_id), FOREIGN KEY(author_id) REFERENCES authors(id),
+# FOREIGN KEY(paper_id) REFERENCES papers(id))''')
+
 # NOT USED
 # c.execute('''CREATE TABLE journals (id INTEGER PRIMARY KEY AUTOINCREMENT, name text, url text UNIQUE,
 # year text, volume text UNIQUE, venue_id INTEGER, FOREIGN KEY(venue_id) REFERENCES venues(id)) ''')
@@ -28,10 +38,6 @@ class Database:
         except sqlite3.IntegrityError:
             print("Value " + url + " for: " + name + " already exists! Try again.")
 
-    def get_venues(self):
-        self.c.execute("SELECT url, id FROM venues")
-        return self.c.fetchall()
-
     def add_conference_entry(self, name, url, year, venue_id):
         try:
             self.c.execute("INSERT INTO conferences(name,url, year, venue_id) VALUES (?,?,?,?)", (name, url, year,
@@ -40,8 +46,24 @@ class Database:
         except sqlite3.IntegrityError:
             print("Value " + url + " for: " + name + " already exists! Try again.")
 
+    def add_paper(self, title, conference_id):
+        try:
+            print("Adding paper: ", title)
+            print("Conference id: ", conference_id)
+            self.c.execute("INSERT INTO papers(title, conference_id) VALUES (?,?)", (title, conference_id))
+            self.conn.commit()
+        except sqlite3.IntegrityError:
+            print("Value " + title + " already exists! Try again.")
+
+    def add_author(self, first_name, last_name, url, affiliation, city, country):
+        self.c.execute("test")
+
+    def get_venues(self):
+        self.c.execute("SELECT url, id FROM venues")
+        return self.c.fetchall()
+
     def get_conference_entry_urls(self, venue_id):
-        self.c.execute("SELECT url FROM conferences WHERE venue_id=?", (venue_id,))
+        self.c.execute("SELECT url, id FROM conferences WHERE venue_id=? ORDER BY id ASC", (venue_id,))
         return self.c.fetchall()
 
     # def add_journal_entry(self, name, url, year, journal_id):
@@ -57,15 +79,8 @@ class Database:
     #     return self.c.fetchall()
 
 
-# conn = sqlite3.connect("rankings.db")
-# c = conn.cursor()
-# c.execute('''CREATE TABLE conferences (id INTEGER PRIMARY KEY AUTOINCREMENT, name text, url text UNIQUE,
-# year text, venue_id INTEGER, FOREIGN KEY(venue_id) REFERENCES venues(id)) ''')
-# c.execute("DROP TABLE conferences")
-# TABLE CREATION
+conn = sqlite3.connect("rankings.db")
+c = conn.cursor()
+print(c.fetchall())
+# # TABLE CREATION
 # conn.commit()
-# c.execute('''CREATE TABLE journals (id INTEGER PRIMARY KEY AUTOINCREMENT, name text, url text UNIQUE,
-# year text, venue_id INTEGER, FOREIGN KEY(venue_id) REFERENCES venues(id)) ''')
-
-# c.execute("SELECT url FROM venues where type='Journal' ")
-# print(c.fetchall())

@@ -7,8 +7,14 @@ from database import Database
 db = Database()
 link_base = "https://dblp.org/search/venue/api?q="
 
+
 def similarity(a, b):
     return SequenceMatcher(None, a, b).ratio()
+
+
+def convert_lines(venues):
+    for v in venues:
+        get_page(v)
 
 
 def get_html(url):
@@ -48,11 +54,6 @@ def get_page(venue):
     return potential_venue_links
 
 
-def convert_lines(venues):
-    for v in venues:
-        get_page(v)
-
-
 def get_conferences():
     venues = db.get_venues()
     print(len(venues))
@@ -77,7 +78,7 @@ def get_yearly_conferences(conf_id):
     return db.get_conference_entry_urls(conf_id)
 
 
-def add_author(name, url, paper_title):
+def get_author(name, url, paper_title):
     s = get_html(url)
     print("Author:", name)
     affiliation = s.find("li", itemprop="affiliation")
