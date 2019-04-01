@@ -1,7 +1,7 @@
 from googleapiclient.discovery import build
 import pprint
 
-my_api_key = "AIzaSyDAkxz6LO5aq6rt97xc3H0rlvA4AJx4rFA"
+my_api_key = ""
 my_cse_id = "005296326583044659583:xsrnrd7nqiw"
 
 
