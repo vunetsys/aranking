@@ -13,8 +13,11 @@ import sqlite3
 # c.execute('''CREATE TABLE papers (id INTEGER PRIMARY KEY AUTOINCREMENT, title text UNIQUE,
 # conference_id INTEGER, FOREIGN KEY(conference_id) REFERENCES conferences(id)) ''')
 #
+# c.execute('''CREATE TABLE affiliation (id INTEGER PRIMARY KEY AUTOINCREMENT, affiliation text UNIQUE,
+# location text)''')
+#
 # c.execute('''CREATE TABLE authors (id INTEGER PRIMARY KEY AUTOINCREMENT, first_name text, middle_name text,
-# last_name text, url text UNIQUE, affiliation text, place text) ''')
+# last_name text, url text UNIQUE, affiliation_id INTEGER, FOREIGN KEY(affiliation_id) REFERENCES affiliation(id)) '''))
 #
 # c.execute('''CREATE TABLE authors_papers (author_id INTEGER NOT NULL, paper_id INTEGER NOT NULL,
 # PRIMARY KEY(author_id, paper_id), FOREIGN KEY(author_id) REFERENCES authors(id),
@@ -68,11 +71,22 @@ class Database:
             self.c.execute("SELECT id FROM papers WHERE title=?", (title,))
             return self.c.fetchone()
 
-    def add_author(self, first_name, middle_name, last_name, url, affiliation, place):
+    def add_affiliation(self, affiliation):
         try:
-            print("Trying:", first_name)
-            self.c.execute('''INSERT INTO authors(first_name, middle_name, last_name, url, affiliation, place)
-                           VALUES (?,?,?,?,?,?)''', (first_name, middle_name, last_name, url, affiliation, place))
+            print(affiliation)
+            self.c.execute('''INSERT INTO affiliation(affiliation) VALUES (?)''', (affiliation,))
+            self.conn.commit()
+            self.c.execute("SELECT id FROM affiliation WHERE affiliation=?", (affiliation,))
+            return self.c.fetchone()
+        except sqlite3.IntegrityError:
+            print(affiliation + " already exists!")
+            self.c.execute("SELECT id FROM affiliation WHERE affiliation=?", (affiliation,))
+            return self.c.fetchone()
+
+    def add_author(self, first_name, middle_name, last_name, url, aff_id):
+        try:
+            self.c.execute('''INSERT INTO authors(first_name, middle_name, last_name, url, affiliation_id)
+                           VALUES (?,?,?,?,?)''', (first_name, middle_name, last_name, url, aff_id))
             self.conn.commit()
             print("Added author: " + first_name + " " + last_name)
             self.c.execute("SELECT id FROM authors where url=?", (url,))

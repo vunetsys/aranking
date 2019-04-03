@@ -4,14 +4,14 @@ from difflib import SequenceMatcher
 import re
 from database import Database
 from google_search import google_search
+from nameparser import HumanName
 
 db = Database()
 link_base_dblp = "https://dblp.org/search/venue/api?q="
-seen_conferences = set()
+filename = "crawled_conferences.txt"
 
 '''
 TO DO:
-- Implement set to check for visited urls
 - Change authors method to check for data in acm & ieee
 '''
 
@@ -101,56 +101,57 @@ def get_yearly_conferences(conf_id):
     return db.get_conference_entry_urls(conf_id)
 
 
-def get_author(title, paper_id):
-    return
-    # db.add_author_paper(author_id[0], paper_id)
-
-    # s = get_html(url)
-    # n = HumanName(name)
-    # first_name = n.first
-    # middle_name = n.middle
-    # last_name = n.last
-    # affiliation = None
-    # location = None
-    # is_affiliated = s.find("li", itemprop="affiliation")
-    # if is_affiliated:
-    #     affiliated_to = is_affiliated.find("span", itemprop="name")
-    #     location = affiliated_to.text.split(",")
-    #     if len(location) == 1:
-    #         affiliation = location[0]
-    #         location = None
-    #     else:
-    #         affiliation = location[0]
-    #         place = location[1:]
-    #         location = ",".join(place)
-    #
-    # author_id = database.add_author(first_name, middle_name, last_name, url, affiliation, location)
-    # database.add_author_paper(author_id[0], paper_id)
-
-
 def get_papers(conferences):
-    for c in conferences:
-        if c[0] not in seen_conferences:
+    with open(filename, 'r') as f:
+        visited = f.read()
+        f.close()
+    with open(filename, 'a') as f:
+        for c in conferences:
             url = c[0]
             conference_id = c[1]
             print(conference_id)
-            s = get_html(url)
-            li = s.findAll("li", {"class": "entry inproceedings"})
-            for l in li:
-                divs = l.findAll("div", itemprop="headline")
-                for d in divs:
-                    # span = d.findAll("span", itemprop="author")
-                    title = d.find("span", {"class": "title"})
-                    paper_title = title.text.replace(".", "")
-                    print(paper_title)
-                    paper_id = db.add_paper(paper_title, conference_id)
-                    # paper_id = paper_id[0]
-                    # get_author(paper_title, paper_id)
-                    # for sp in span:
-                    #     name = sp.text
-                    #     link = sp.find("a").get("href")
-                    #     get_author(name, link, paper_id, db)
-            seen_conferences.add(url)
+            conference = str(conference_id)
+            if conference not in visited:
+                s = get_html(url)
+                li = s.findAll("li", {"class": "entry inproceedings"})
+                for l in li:
+                    divs = l.findAll("div", itemprop="headline")
+                    for d in divs:
+                        span = d.findAll("span", itemprop="author")
+                        title = d.find("span", {"class": "title"})
+                        paper_title = title.text.replace(".", "")
+                        print(paper_title)
+                        paper_id = db.add_paper(paper_title, conference_id)
+                        paper_id = paper_id[0]
+                        for sp in span:
+                            name = sp.text
+                            link = sp.find("a").get("href")
+                            get_author(name, link, paper_id)
+                f.write(str(conference_id) + "\n")
+            else:
+                print(str(conference_id) + " already visited!")
+    f.close()
+
+
+def get_author(name, url, paper_id):
+    with open("unaf_authors.txt", 'a') as f:
+        s = get_html(url)
+        n = HumanName(name)
+        first_name = n.first
+        middle_name = n.middle
+        last_name = n.last
+        is_affiliated = s.find("li", itemprop="affiliation")
+        if is_affiliated:
+            affiliated_to = is_affiliated.find("span", itemprop="name")
+            affiliation_id = db.add_affiliation(affiliated_to.text)
+            author_id = db.add_author(first_name, middle_name, last_name, url, affiliation_id[0])
+        else:
+            author_id = db.add_author(first_name, middle_name, last_name, url, 0)
+            print("No affiliation for author with id", author_id[0])
+            f.write(str(author_id[0]) + "\n")
+        f.close()
+
+    db.add_author_paper(author_id[0], paper_id)
 
 # def get_journals():
 #     journals = db.get_journals()
@@ -188,6 +189,6 @@ def get_papers(conferences):
 
     # print(links)
     # for j in journals:
-        # journal_id = j[1]
-        # s = get_html(j[0])
-        # print(s.prettify())
+    # journal_id = j[1]
+    # s = get_html(j[0])
+    # print(s.prettify())
