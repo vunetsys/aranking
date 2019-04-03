@@ -1,7 +1,7 @@
-import os
 from dblp_crawler import *
 from database import Database
 
+# queue = Queue()
 db = Database()
 
 

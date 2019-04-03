@@ -1,10 +1,8 @@
-import requests
-from bs4 import BeautifulSoup
-from difflib import SequenceMatcher
 import re
 from database import Database
 from google_search import google_search
 from nameparser import HumanName
+from general import get_html, similar
 
 db = Database()
 link_base_dblp = "https://dblp.org/search/venue/api?q="
@@ -14,16 +12,6 @@ filename = "crawled_conferences.txt"
 TO DO:
 - Change authors method to check for data in acm & ieee
 '''
-
-
-def similar(a, b):
-    return SequenceMatcher(None, a, b).ratio()
-
-
-def get_html(url):
-    page = requests.get(url)
-    text = page.text
-    return BeautifulSoup(text, "html.parser")
 
 
 def get_scholar_venues():
