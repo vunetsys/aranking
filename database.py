@@ -1,4 +1,5 @@
-import sqlite3
+import psycopg2 as p
+
 
 # TABLE CREATION
 
@@ -31,76 +32,81 @@ import sqlite3
 class Database:
 
     def __init__(self):
-        self.conn = sqlite3.connect('rankings.db', timeout=20)
+        self.conn = p.connect(database='academicrankings', user='lucasfaijdherbe')
         self.c = self.conn.cursor()
+        # self.conn = sqlite3.connect('rankings.db', timeout=20, check_same_thread=False)
+        # self.c = self.conn.cursor()
+        # self.c.execute("PRAGMA journal_mode=WAL;")
+        # self.conn.commit()
 
     def close_db(self):
+        self.c.close()
         self.conn.close()
 
     def add_scholar_venue(self, name, category):
         try:
-            self.c.execute("INSERT INTO scholar_venues(name, category) VALUES (?, ?)", (name, category))
+            self.c.execute("INSERT INTO scholar_venues(name, category) VALUES (%s, %s)", (name, category))
             self.conn.commit()
-        except sqlite3.IntegrityError:
+        except p.IntegrityError:
             return
 
     def add_venue(self, name, url):
         try:
-            self.c.execute("INSERT INTO venues(name,url) VALUES (?,?)", (name, url))
+            self.c.execute("INSERT INTO venues(name,url) VALUES (%s,%s)", (name, url))
             self.conn.commit()
-        except sqlite3.IntegrityError:
+        except p.IntegrityError:
             return
             # print("Value " + url + " for: " + name + " already exists! Try again.")
 
     def add_conference_entry(self, name, url, year, venue_id):
         try:
-            self.c.execute("INSERT INTO conferences(name,url, year, venue_id) VALUES (?,?,?,?)", (name, url, year,
-                                                                                                  venue_id))
+            self.c.execute("INSERT INTO conferences(name,url, year, venue_id) VALUES (%s,%s,%s,%s)", (name, url, year,
+                                                                                                      venue_id))
             self.conn.commit()
-        except sqlite3.IntegrityError:
+        except p.IntegrityError:
             print("Value " + url + " for: " + name + " already exists! Try again.")
 
     def add_paper(self, title, conference_id):
         try:
-            self.c.execute("INSERT INTO papers(title, conference_id) VALUES (?,?)", (title, conference_id))
+            self.c.execute("INSERT INTO papers(title, conference_id) VALUES (%s,%s)", (title, conference_id))
             self.conn.commit()
-            self.c.execute("SELECT id FROM papers WHERE title=?", (title,))
+            self.c.execute("SELECT id FROM papers WHERE title=%s", (title,))
             return self.c.fetchone()
-        except sqlite3.IntegrityError:
+        except p.IntegrityError:
             print("Value " + title + " already exists! Try again.")
-            self.c.execute("SELECT id FROM papers WHERE title=?", (title,))
+            self.c.execute("SELECT id FROM papers WHERE title=%s", (title,))
             return self.c.fetchone()
 
     def add_affiliation(self, affiliation):
         try:
             print(affiliation)
-            self.c.execute('''INSERT INTO affiliation(affiliation) VALUES (?)''', (affiliation,))
+            self.c.execute('''INSERT INTO affiliation(affiliation) VALUES (%s)''', (affiliation,))
             self.conn.commit()
-            self.c.execute("SELECT id FROM affiliation WHERE affiliation=?", (affiliation,))
+            self.c.execute("SELECT id FROM affiliation WHERE affiliation=%s", (affiliation,))
             return self.c.fetchone()
-        except sqlite3.IntegrityError:
+        except p.IntegrityError:
             print(affiliation + " already exists!")
-            self.c.execute("SELECT id FROM affiliation WHERE affiliation=?", (affiliation,))
+            self.c.execute("SELECT id FROM affiliation WHERE affiliation=%s", (affiliation,))
             return self.c.fetchone()
 
     def add_author(self, first_name, middle_name, last_name, url, aff_id):
         try:
             self.c.execute('''INSERT INTO authors(first_name, middle_name, last_name, url, affiliation_id)
-                           VALUES (?,?,?,?,?)''', (first_name, middle_name, last_name, url, aff_id))
+                           VALUES (%s,%s,%s,%s,%s)''', (first_name, middle_name, last_name, url, aff_id))
             self.conn.commit()
             print("Added author: " + first_name + " " + last_name)
-            self.c.execute("SELECT id FROM authors where url=?", (url,))
+            self.c.execute("SELECT id FROM authors where url=%s", (url,))
             return self.c.fetchone()
-        except sqlite3.IntegrityError:
+        except p.IntegrityError:
             print("Author:" + first_name + " " + last_name + " already exists! Try again.")
-            self.c.execute("SELECT id FROM authors WHERE url=?", (url,))
+            self.c.execute("SELECT id FROM authors WHERE url=%s", (url,))
             return self.c.fetchone()
 
     def add_author_paper(self, author_id, paper_id):
         try:
-            self.c.execute("INSERT INTO authors_papers(author_id, paper_id) VALUES (?,?)", (author_id, paper_id))
+            self.c.execute("INSERT INTO authors_papers(author_id, paper_id) VALUES (%s,%s)", (author_id, paper_id))
             self.conn.commit()
-        except sqlite3.IntegrityError:
+        except p.IntegrityError:
             print("Record already exists! Try again.")
 
     def get_scholar_venues(self):
@@ -119,7 +125,7 @@ class Database:
         return self.c.fetchall()
 
     def get_conference_entry_urls(self, venue_id):
-        self.c.execute("SELECT url, id FROM conferences WHERE venue_id=? ORDER BY id ASC", (venue_id,))
+        self.c.execute("SELECT url, id FROM conferences WHERE venue_id=%s ORDER BY id ASC", (venue_id,))
         return self.c.fetchall()
 
     # def add_journal_entry(self, name, url, year, journal_id):
@@ -134,8 +140,16 @@ class Database:
     #     self.c.execute("SELECT url, id FROM venues WHERE type='Journal' and id > 177")
     #     return self.c.fetchall()
 
+#
+# conn = sqlite3.connect("rankings.db")
+# c = conn.cursor()
+# conn.commit()
+# conn.close()
 
-conn = sqlite3.connect("rankings.db")
-c = conn.cursor()
-conn.commit()
-conn.close()
+
+# db = Database()
+# venues = db.get_venues()
+# for v in venues:
+#     print(v)
+# conn = p.connect(database='academicrankings', user='lucasfaijdherbe')
+# c = conn.cursor()
