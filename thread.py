@@ -3,17 +3,16 @@ from general import get_html
 import psycopg2
 from psycopg2.pool import ThreadedConnectionPool
 
-
 link_base_dblp = "https://dblp.org/search/venue/api?q="
 filename = "crawled_conferences.txt"
 
 DSN = "host='localhost' dbname='academicrankings' user='lucasfaijdherbe'"
-tcp = ThreadedConnectionPool(1, 12, DSN)
+tcp = ThreadedConnectionPool(1, 5, DSN)
 
 
 def get_papers(conference, thread_id):
     database = ThreadDb()
-    # print("Paper opened")
+
     with open(filename, 'r') as f:
         visited = f.read()
         f.close()
@@ -24,31 +23,36 @@ def get_papers(conference, thread_id):
     print("STARTING CONFERENCE WITH ID " + conf_id + " FOR THREAD " + str(thread_id))
 
     if conf_id not in visited:
-        s = get_html(url)
+        s = get_html(url, thread_id)
         li = s.findAll("li", {"class": "entry inproceedings"})
         for l in li:
             divs = l.findAll("div", itemprop="headline")
             for d in divs:
                 span = d.findAll("span", itemprop="author")
                 title = d.find("span", {"class": "title"})
+
                 paper_title = title.text.replace(".", "")
                 print("FOR " + str(thread_id) + " Paper: " + paper_title)
+
                 paper_id = database.add_paper(paper_title, conference_id)
                 paper_id = paper_id[0]
+
                 for sp in span:
                     name = sp.text
                     link = sp.find("a").get("href")
-                    get_author(name, link, paper_id, database)
+                    get_author(name, link, paper_id, database, thread_id)
+
         print("THREAD " + str(thread_id) + " DONE")
         database.put_connection()
+
     else:
         print(str(conference_id) + " already visited!")
         print("THREAD " + str(thread_id) + " DONE")
         database.put_connection()
 
 
-def get_author(name, url, paper_id, database):
-    s = get_html(url)
+def get_author(name, url, paper_id, database, thread_id):
+    s = get_html(url, thread_id)
     n = HumanName(name)
     first_name = n.first
     middle_name = n.middle
