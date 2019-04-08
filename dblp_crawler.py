@@ -3,6 +3,7 @@ from database import Database
 from google_search import google_search
 from nameparser import HumanName
 from general import get_html, similar
+from thread_database import ThreadDb
 
 db = Database()
 link_base_dblp = "https://dblp.org/search/venue/api?q="
@@ -88,6 +89,84 @@ def get_conferences():
 
 def get_yearly_conferences(conf_id):
     return db.get_conference_entry_urls(conf_id)
+
+
+def get_papers(conference, thread_id):
+    database = ThreadDb()
+
+    url = conference[0]
+    conference_id = conference[1]
+    conf_id = str(conference_id)
+    print("STARTING CONFERENCE WITH ID " + conf_id + " FOR THREAD " + str(thread_id))
+    author_ids = []
+
+    s = get_html(url, thread_id)
+    li = s.findAll("li", {"class": "entry inproceedings"})
+    for l in li:
+        divs = l.findAll("div", itemprop="headline")
+        for d in divs:
+            span = d.findAll("span", itemprop="author")
+            title = d.find("span", {"class": "title"})
+
+            paper_title = title.text.replace(".", "")
+
+            paper_id = database.add_paper(paper_title, conference_id)
+            paper_id = paper_id[0]
+
+            for sp in span:
+                name = sp.text
+                url = sp.find("a").get("href")
+                n = HumanName(name)
+                first_name = n.first
+                middle_name = n.middle
+                last_name = n.last
+                author_id = database.add_author(first_name, middle_name, last_name, url, 9999999)
+                database.add_author_paper(author_id[0], paper_id)
+                author_ids.append(author_id)
+
+        print("THREAD " + str(thread_id) + " DONE")
+        database.put_connection()
+        return author_ids
+
+
+def get_author(author_id, thread_id):
+    print("STARTING AUTHOR SEARCH FOR THREAD: " + str(thread_id))
+    database = ThreadDb()
+
+    database.c.execute("SELECT * FROM AUTHORS WHERE id=%s", (author_id,))
+    author = database.c.fetchone()
+
+    url = author[4]
+    s = get_html(url, thread_id)
+    is_affiliated = s.find("li", itemprop="affiliation")
+
+    if is_affiliated:
+        affiliated_to = is_affiliated.find("span", itemprop="name")
+        affiliation_id = database.add_affiliation(affiliated_to.text)
+        print("AFFILIATION FOUND!")
+        database.c.execute("UPDATE AUTHORS SET affiliation_id=%s WHERE id=%s", (affiliation_id, author_id,))
+        database.conn.commit()
+        database.put_connection()
+    else:
+        print("NO AFFILIATION FOUND!")
+        database.c.execute("UPDATE AUTHORS SET affiliation_id=0 WHERE id=%s", (author_id,))
+        database.conn.commit()
+        database.put_connection()
+
+    # s = get_html(url, thread_id)
+    #
+    # is_affiliated = s.find("li", itemprop="affiliation")
+    #
+    # if is_affiliated:
+    #     affiliated_to = is_affiliated.find("span", itemprop="name")
+    #     affiliation_id = database.add_affiliation(affiliated_to.text)
+    #     author_id = database.add_author(first_name, middle_name, last_name, url, affiliation_id[0])
+    # else:
+    #     author_id = database.add_author(first_name, middle_name, last_name, url, 0)
+    #     # print("No affiliation for author with id", author_id[0])
+    #
+    # database.add_author_paper(author_id[0], paper_id)
+    # database.put_connection()
 
 
 # def get_journals():

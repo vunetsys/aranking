@@ -1,6 +1,5 @@
 import psycopg2 as p
 
-
 # TABLE CREATION
 
 # c.execute('''CREATE TABLE scholar_venues (name text UNIQUE, category text)''')

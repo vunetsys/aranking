@@ -1,0 +1,63 @@
+2019-04-05 08:20:11,529 - elsapy.elsclient - INFO - Module loaded.
+2019-04-05 08:20:11,531 - elsapy.elsentity - INFO - Module loaded.
+2019-04-05 08:20:11,532 - elsapy.elsprofile - INFO - Module loaded.
+2019-04-05 08:20:11,533 - elsapy.elsdoc - INFO - Module loaded.
+2019-04-05 08:20:11,534 - elsapy.elssearch - INFO - Module loaded.
+2019-04-05 08:20:12,534 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/author/author_id/7004367821
+2019-04-05 08:20:13,325 - elsapy.elsentity - WARNING - HTTP 401 Error from https://api.elsevier.com/content/author/author_id/7004367821
+and using headers {'X-ELS-APIKey': 'acac2be39acb28ab1b7eef1fa53289ce', 'User-Agent': 'elsapy-v0.4.6', 'Accept': 'application/json'}:
+{"service-error":{"status":{"statusCode":"AUTHORIZATION_ERROR","statusText":"The requestor is not authorized to access the requested view or fields of the resource"}}}
+2019-04-05 08:20:14,328 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/affiliation/affiliation_id/60101411
+2019-04-05 08:20:14,951 - elsapy.elsentity - WARNING - HTTP 401 Error from https://api.elsevier.com/content/affiliation/affiliation_id/60101411
+and using headers {'X-ELS-APIKey': 'acac2be39acb28ab1b7eef1fa53289ce', 'User-Agent': 'elsapy-v0.4.6', 'Accept': 'application/json'}:
+{"service-error":{"status":{"statusCode":"AUTHORIZATION_ERROR","statusText":"The requestor is not authorized to access the requested view or fields of the resource"}}}
+2019-04-05 08:20:15,953 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/abstract/scopus_id/84872135457
+2019-04-05 08:20:16,792 - elsapy.elsentity - INFO - Data loaded for https://api.elsevier.com/content/abstract/scopus_id/84872135457
+2019-04-05 08:20:16,793 - elsapy.elsentity - INFO - Wrote https://api.elsevier.com/content/abstract/scopus_id/84872135457 to file
+2019-04-05 08:20:17,792 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/article/pii/S1674927814000082
+2019-04-05 08:20:18,886 - elsapy.elsentity - INFO - Data loaded for https://api.elsevier.com/content/article/pii/S1674927814000082
+2019-04-05 08:20:18,887 - elsapy.elsentity - INFO - Wrote https://api.elsevier.com/content/article/pii/S1674927814000082 to file
+2019-04-05 08:20:19,889 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/article/doi/10.1016/S1525-1578(10)60571-5
+2019-04-05 08:20:21,002 - elsapy.elsentity - INFO - Data loaded for https://api.elsevier.com/content/article/doi/10.1016/S1525-1578(10)60571-5
+2019-04-05 08:20:21,004 - elsapy.elsentity - INFO - Wrote https://api.elsevier.com/content/article/doi/10.1016/S1525-1578(10)60571-5 to file
+2019-04-05 08:20:25,788 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/author?query=authlast(keuskamp)
+2019-04-05 08:21:10,430 - elsapy.elsclient - INFO - Module loaded.
+2019-04-05 08:21:10,431 - elsapy.elsentity - INFO - Module loaded.
+2019-04-05 08:21:10,432 - elsapy.elsprofile - INFO - Module loaded.
+2019-04-05 08:21:10,433 - elsapy.elsdoc - INFO - Module loaded.
+2019-04-05 08:21:10,433 - elsapy.elssearch - INFO - Module loaded.
+2019-04-05 08:21:11,432 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/author?query=authlast(keuskamp)
+2019-04-05 08:23:35,862 - elsapy.elsclient - INFO - Module loaded.
+2019-04-05 08:23:35,863 - elsapy.elsentity - INFO - Module loaded.
+2019-04-05 08:23:35,863 - elsapy.elsprofile - INFO - Module loaded.
+2019-04-05 08:23:35,864 - elsapy.elsdoc - INFO - Module loaded.
+2019-04-05 08:23:35,865 - elsapy.elssearch - INFO - Module loaded.
+2019-04-05 08:23:36,867 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/author?query=authlast(keuskamp)
+2019-04-05 08:28:22,867 - elsapy.elsclient - INFO - Module loaded.
+2019-04-05 08:28:22,868 - elsapy.elsentity - INFO - Module loaded.
+2019-04-05 08:28:22,869 - elsapy.elsprofile - INFO - Module loaded.
+2019-04-05 08:28:22,869 - elsapy.elsdoc - INFO - Module loaded.
+2019-04-05 08:28:22,870 - elsapy.elssearch - INFO - Module loaded.
+2019-04-05 08:28:23,872 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/author?query=authlast(keuskamp)
+2019-04-05 14:01:08,477 - elsapy.elsclient - INFO - Module loaded.
+2019-04-05 14:01:08,479 - elsapy.elsentity - INFO - Module loaded.
+2019-04-05 14:01:08,480 - elsapy.elsprofile - INFO - Module loaded.
+2019-04-05 14:01:08,481 - elsapy.elsdoc - INFO - Module loaded.
+2019-04-05 14:01:08,482 - elsapy.elssearch - INFO - Module loaded.
+2019-04-05 14:01:09,478 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/author?query=authlast(keuskamp)
+2019-04-05 14:01:11,117 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/affiliation?query=affil(amsterdam)
+2019-04-05 14:01:12,695 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/scopus?query=star+trek+vs+star+wars
+2019-04-05 14:01:15,481 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/scopus?start=25&count=25&query=star+trek+vs+star+wars
+2019-04-05 14:01:18,407 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/scopus?start=50&count=25&query=star+trek+vs+star+wars
+2019-04-05 14:01:21,227 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/scopus?start=75&count=25&query=star+trek+vs+star+wars
+2019-04-05 14:01:23,942 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/scopus?start=100&count=25&query=star+trek+vs+star+wars
+2019-04-05 14:01:26,659 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/scopus?start=125&count=25&query=star+trek+vs+star+wars
+2019-04-05 14:01:29,583 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/scopus?start=150&count=25&query=star+trek+vs+star+wars
+2019-04-05 14:01:32,926 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/scopus?start=175&count=25&query=star+trek+vs+star+wars
+2019-04-05 14:01:36,060 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/scopus?start=200&count=25&query=star+trek+vs+star+wars
+2019-04-05 17:02:33,900 - elsapy.elsclient - INFO - Module loaded.
+2019-04-05 17:02:33,903 - elsapy.elsentity - INFO - Module loaded.
+2019-04-05 17:02:33,903 - elsapy.elsprofile - INFO - Module loaded.
+2019-04-05 17:02:33,905 - elsapy.elsdoc - INFO - Module loaded.
+2019-04-05 17:02:33,906 - elsapy.elssearch - INFO - Module loaded.
+2019-04-05 17:02:34,904 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/author?query=authlast(keuskamp)
