@@ -88,6 +88,10 @@ class Database:
         self.c.execute("SELECT url, id FROM venues ORDER BY id ASC")
         return self.c.fetchall()
 
+    def get_papers(self):
+        self.c.execute("SELECT id, title FROM papers")
+        return self.c.fetchall()
+
     def get_conference_entry_urls(self, venue_id):
         self.c.execute("SELECT url, id FROM conferences WHERE venue_id=%s ORDER BY id ASC", (venue_id,))
         return self.c.fetchall()

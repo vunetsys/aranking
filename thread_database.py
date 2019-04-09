@@ -4,7 +4,7 @@ from psycopg2.pool import ThreadedConnectionPool
 link_base_dblp = "https://dblp.org/search/venue/api?q="
 
 DSN = "host='localhost' dbname='academicrankings' user='lucasfaijdherbe'"
-tcp = ThreadedConnectionPool(1, 8, DSN)
+tcp = ThreadedConnectionPool(1, 12, DSN)
 
 
 class ThreadDb:
@@ -34,7 +34,7 @@ class ThreadDb:
     def add_affiliation(self, aff_id, affiliation, country):
         try:
             print(affiliation)
-            self.c.execute('''INSERT INTO affiliation(id, affiliation, country) VALUES (%s)''',
+            self.c.execute('''INSERT INTO affiliations(id, affiliation, country) VALUES (%s, %s, %s)''',
                            (aff_id, affiliation, country))
             self.conn.commit()
         except psycopg2.IntegrityError:
@@ -48,8 +48,8 @@ class ThreadDb:
             self.conn.commit()
             print("Added author: " + first_name + " " + last_name)
         except psycopg2.IntegrityError:
-            print("Author:" + first_name + " " + last_name + " already exists! Try again.")
             self.conn.rollback()
+            #print("Author:" + first_name + " " + last_name + " already exists! Try again.")
 
     def add_author_paper(self, author_id, paper_id):
         try:
@@ -57,4 +57,4 @@ class ThreadDb:
             self.conn.commit()
         except psycopg2.IntegrityError:
             self.conn.rollback()
-            # print("Record already exists! Try again.")
+            print("Record already exists! Try again.")
