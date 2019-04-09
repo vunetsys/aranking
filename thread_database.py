@@ -4,7 +4,7 @@ from psycopg2.pool import ThreadedConnectionPool
 link_base_dblp = "https://dblp.org/search/venue/api?q="
 
 DSN = "host='localhost' dbname='academicrankings' user='lucasfaijdherbe'"
-tcp = ThreadedConnectionPool(1, 4, DSN)
+tcp = ThreadedConnectionPool(1, 8, DSN)
 
 
 class ThreadDb:
@@ -31,32 +31,25 @@ class ThreadDb:
             self.c.execute("SELECT id FROM papers WHERE title=%s", (title,))
             return self.c.fetchone()
 
-    def add_affiliation(self, affiliation):
+    def add_affiliation(self, aff_id, affiliation, country):
         try:
             print(affiliation)
-            self.c.execute('''INSERT INTO affiliation(affiliation) VALUES (%s)''', (affiliation,))
+            self.c.execute('''INSERT INTO affiliation(id, affiliation, country) VALUES (%s)''',
+                           (aff_id, affiliation, country))
             self.conn.commit()
-            self.c.execute("SELECT id FROM affiliation WHERE affiliation=%s", (affiliation,))
-            return self.c.fetchone()
         except psycopg2.IntegrityError:
-            # print(affiliation + " already exists!")
             self.conn.rollback()
-            self.c.execute("SELECT id FROM affiliation WHERE affiliation=%s", (affiliation,))
-            return self.c.fetchone()
+            print("AFFILIATION ALREADY EXISTS")
 
-    def add_author(self, first_name, middle_name, last_name, url, aff_id):
+    def add_author(self, user_id, first_name, last_name, url, aff_id):
         try:
-            self.c.execute('''INSERT INTO authors(first_name, middle_name, last_name, url, affiliation_id)
-                           VALUES (%s,%s,%s,%s,%s)''', (first_name, middle_name, last_name, url, aff_id))
+            self.c.execute('''INSERT INTO authors(user_id, first_name, last_name, url, affiliation_id)
+                           VALUES (%s,%s,%s,%s,%s)''', (user_id, first_name, last_name, url, aff_id))
             self.conn.commit()
             print("Added author: " + first_name + " " + last_name)
-            self.c.execute("SELECT id FROM authors where url=%s", (url,))
-            return self.c.fetchone()
         except psycopg2.IntegrityError:
-            # print("Author:" + first_name + " " + last_name + " already exists! Try again.")
+            print("Author:" + first_name + " " + last_name + " already exists! Try again.")
             self.conn.rollback()
-            self.c.execute("SELECT id FROM authors WHERE url=%s", (url,))
-            return self.c.fetchone()
 
     def add_author_paper(self, author_id, paper_id):
         try:

@@ -65,6 +65,14 @@ class Database:
         except p.IntegrityError:
             print("Value " + url + " for: " + name + " already exists! Try again.")
 
+    def update_affiliation(self, affiliation, country, id):
+        try:
+            self.c.execute("UPDATE affiliation SET affiliation=%s, location=%s WHERE id=%s", (affiliation, country, id))
+            self.conn.commit()
+        except p.IntegrityError:
+            self.conn.rollback()
+            print("Duplicate value for " + affiliation)
+
     def get_scholar_venues(self):
         self.c.execute('''SELECT name FROM scholar_venues WHERE (category = 'Artificial Intelligence'
                        OR category = 'Computational Linguistics' OR category = 'Computer Graphics' OR

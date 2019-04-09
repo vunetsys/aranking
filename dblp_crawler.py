@@ -142,7 +142,8 @@ def get_author(author_id, thread_id):
 
     if is_affiliated:
         affiliated_to = is_affiliated.find("span", itemprop="name")
-        affiliation_id = database.add_affiliation(affiliated_to.text)
+        parse_affiliation(affiliated_to.text)
+        # affiliation_id = database.add_affiliation(affiliated_to.text)
         print("AFFILIATION FOUND!")
         database.c.execute("UPDATE AUTHORS SET affiliation_id=%s WHERE id=%s", (affiliation_id, author_id,))
         database.conn.commit()
@@ -152,6 +153,37 @@ def get_author(author_id, thread_id):
         database.c.execute("UPDATE AUTHORS SET affiliation_id=0 WHERE id=%s", (author_id,))
         database.conn.commit()
         database.put_connection()
+
+
+def parse_affiliation(info):
+    with open("countries.txt") as f:
+        countries = f.read()
+
+    # print(info)
+    aff_id = info[0]
+    affiliation = info[1]
+
+    affiliation = affiliation.replace(", ", ",")
+    aff_info = affiliation.split(",")
+
+    if len(aff_info) > 1:
+        affiliation = aff_info[:-1]
+        potential_country = aff_info[-1]
+    else:
+        if aff_info:
+            affiliation = None
+            potential_country = aff_info[0]
+
+    if potential_country in countries:
+        country = potential_country
+        if affiliation:
+            aff = ""
+            aff = aff.join(affiliation)
+        else:
+            aff = None
+
+        db.update_affiliation(aff, country, aff_id)
+        # print("FOUND COUNTRY", potential_country)
 
     # s = get_html(url, thread_id)
     #
@@ -208,3 +240,11 @@ def get_author(author_id, thread_id):
     # journal_id = j[1]
     # s = get_html(j[0])
     # print(s.prettify())
+
+# db.c.execute("SELECT id, affiliation from affiliation")
+# affiliations = db.c.fetchall()
+#
+# for a in affiliations:
+#     parse_affiliation(a)
+
+# parse_affiliation("Duke University, Durham, NC, USA")
