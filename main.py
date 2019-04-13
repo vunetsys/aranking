@@ -127,11 +127,11 @@ def main():
     db.close_db()
     for paper in papers:
         id = paper[0]
-        if str(id) in visited or str(id) in no_result:
-            # print("Already visited", id)
-            continue
-        else:
-            create_jobs(paper, paper_queue)
+        # if str(id) in visited or str(id) in no_result:
+        #     # print("Already visited", id)
+        #     continue
+        # else:
+        create_jobs(paper, paper_queue)
     create_crawlers(get_affiliations)
     # venues = db.get_venues()
     # for v in venues:

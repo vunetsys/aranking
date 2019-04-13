@@ -89,7 +89,7 @@ class Database:
         return self.c.fetchall()
 
     def get_papers(self):
-        self.c.execute("SELECT id, title FROM papers")
+        self.c.execute("SELECT id, title FROM papers where id < 2171")
         return self.c.fetchall()
 
     def get_conference_entry_urls(self, venue_id):
