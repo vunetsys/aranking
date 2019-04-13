@@ -44,12 +44,13 @@ def write_to_file(conf_id):
 
 
 def create_jobs(job, queue):
+    print(job[0])
     queue.put(job)
 
 
 def create_crawlers(target_method):
     workers = []
-    for i in range(5):
+    for i in range(6):
         t = threading.Thread(target=target_method)
         t.daemon = True
         t.start()
@@ -104,13 +105,14 @@ def get_affiliations():
     global num_thread_aff
     num_thread_aff += 1
     print("STARTED THREAD:", num_thread_aff)
-    sleep(3)
+    sleep(1.5)
     while True:
         try:
             paper = paper_queue.get()
             paper_id = paper[0]
             title = paper[1]
             result = process_paper(title, paper_id)
+            print(result)
             if result:
                 write_to_file(paper_id)
             paper_queue.task_done()
@@ -126,7 +128,7 @@ def main():
     for paper in papers:
         id = paper[0]
         if str(id) in visited or str(id) in no_result:
-            # print("Already visited")
+            # print("Already visited", id)
             continue
         else:
             create_jobs(paper, paper_queue)

@@ -14,7 +14,7 @@ def write_no_result(paper_id):
 
     global_lock.acquire()
     with open(filename, "a") as f:
-        print("Writing:", paper_id)
+        print("Writing no result:", paper_id)
         f.write(str(paper_id) + "\n")
         f.close()
     global_lock.release()
@@ -22,19 +22,21 @@ def write_no_result(paper_id):
 
 def get_json(url):
     page = requests.get(url)
-    # print(page.headers)
     text = page.text
     return json.loads(text)
 
 
 def process_paper(paper_title, paper_id):
+    paper_title = paper_title.replace("(", "")
+    paper_title = paper_title.replace(")", "")
+    paper_title = paper_title.replace("%", "")
     database = ThreadDb()
     try:
         base_url = "https://api.elsevier.com/content/search/scopus?query="
-        # api_key = "&apikey=acac2be39acb28ab1b7eef1fa53289ce&httpAccept=application/json"
-        api_key = "&apikey=3e6495a4f1db49837a07d3c615779ae4&httpAccept=application/json"
+        api_key = "&apikey=3d7021b28cd9f6a75579fa44b7a5108d&httpAccept=application/json"
         query = "TITLE(" + paper_title + ")"
         url = base_url + query + api_key
+        print(url)
         load = get_json(url)
         result = load['search-results']
         number_of_results = result["opensearch:totalResults"]
@@ -46,27 +48,37 @@ def process_paper(paper_title, paper_id):
             affiliation_url = author_link + api_key
             print(affiliation_url)
             load = get_json(affiliation_url)
-            affiliations = load['abstracts-retrieval-response']['affiliation']
+            try:
+                affiliations = load['abstracts-retrieval-response']['affiliation']
 
-            if isinstance(affiliations, list):
-                for affiliation in affiliations:
-                    id = affiliation['@id']
-                    affiliation_name = affiliation['affilname']
-                    country = affiliation['affiliation-country']
+                if isinstance(affiliations, list):
+                    for affiliation in affiliations:
+                        id = affiliation['@id']
+                        affiliation_name = affiliation['affilname']
+                        country = affiliation['affiliation-country']
+                        print(id)
+                        print(affiliation_name)
+                        print(country)
+                        database.add_affiliation(id, affiliation_name, country)
+                else:
+                    id = affiliations['@id']
+                    affiliation_name = affiliations['affilname']
+                    country = affiliations['affiliation-country']
                     print(id)
                     print(affiliation_name)
                     print(country)
                     database.add_affiliation(id, affiliation_name, country)
-            else:
-                id = affiliations['@id']
-                affiliation_name = affiliations['affilname']
-                country = affiliations['affiliation-country']
-                print(id)
-                print(affiliation_name)
-                print(country)
-                database.add_affiliation(id, affiliation_name, country)
+            except KeyError:
+                print("No affiliation found")
+                pass
 
-            authors = load['abstracts-retrieval-response']['authors']['author']
+            try:
+                authors = load['abstracts-retrieval-response']['authors']['author']
+            except TypeError:
+                print("Typerror")
+                write_no_result(paper_id)
+                database.put_connection()
+                return False
 
             if len(authors) > 1:
                 for author in authors:
@@ -78,13 +90,18 @@ def process_paper(paper_title, paper_id):
                     print(first_name)
                     print(last_name)
                     print(url)
-                    affiliation = author['affiliation']
-                    if isinstance(affiliation, list):
-                        aff_id = author['affiliation'][0]['@id']
-                        print(aff_id)
-                    else:
-                        aff_id = author['affiliation']['@id']
-                        print(aff_id)
+                    try:
+                        affiliation = author['affiliation']
+                        if isinstance(affiliation, list):
+                            aff_id = author['affiliation'][0]['@id']
+                            print(aff_id)
+                        else:
+                            aff_id = author['affiliation']['@id']
+                            print(aff_id)
+                    except KeyError:
+                        print("No affiliation found for author")
+                        aff_id = 0
+                        pass
                     database.add_author(user_id, first_name, last_name, url, aff_id)
                     database.add_author_paper(user_id, paper_id)
             else:
@@ -112,15 +129,10 @@ def process_paper(paper_title, paper_id):
             write_no_result(paper_id)
             database.put_connection()
             return False
-    except KeyError:
+    except KeyError as e:
+        print("Error", e)
+        print("Key Error")
         database.put_connection()
+        write_no_result(paper_id)
         # logging.exception("message")
         return False
-# #
-# db = Database()
-# db.c.execute("SELECT id, title from papers where conference_id = 3 LIMIT 5")
-# papers = db.c.fetchall()
-# for paper in papers:
-#     id = paper[0]
-#     title = paper[1]
-#     process_paper(title, id)
