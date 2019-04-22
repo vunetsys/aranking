@@ -1,0 +1,500 @@
+501-600 Auburn University
+501-600 Bangor University
+501-600 Beijing Jiaotong University
+501-600 Catholic University of the Sacred Heart
+501-600 Chulalongkorn University
+501-600 Colorado School of Mines
+501-600 Eotvos Lorand University
+501-600 Federal University of Parana
+501-600 Gyeongsang National University
+501-600 Hefei University of Technology
+501-600 Hong Kong Baptist University
+501-600 Jinan University
+501-600 Kyungpook National University
+501-600 Mahidol University
+501-600 Masaryk University
+501-600 Medical University of Graz
+501-600 National Polytechnic Institute
+501-600 National University of Malaysia
+501-600 New University of Lisbon
+501-600 Northern Arizona University
+501-600 Ocean University of China
+501-600 Polytechnic University of Madrid
+501-600 Rensselaer Polytechnic Institute
+501-600 Scuola Normale Superiore - Pisa
+501-600 Shenzhen University
+501-600 Southern University of Science and Technology
+501-600 Swansea University
+501-600 Technical University of Dortmund
+501-600 The University of Alabama - Tuscaloosa
+501-600 The University of Texas at San Antonio
+501-600 Universitat Jaume I
+501-600 University of Arkansas at Fayetteville
+501-600 University of Calcutta
+501-600 University of Essex
+501-600 University of Iceland
+501-600 University of KwaZulu-Natal
+501-600 University of Maribor
+501-600 University of Oldenburg
+501-600 University of Oviedo
+501-600 University of Portsmouth
+501-600 University of Quebec Montreal
+501-600 University of Rhode Island
+501-600 University of Seville
+501-600 University of Szeged
+501-600 University of Trento
+501-600 University of Twente
+501-600 University of Vigo
+501-600 University of Zaragoza
+501-600 Yeungnam University
+501-600 Zhengzhou University
+601-700 Alexandria University
+601-700 Amherst College
+601-700 Army Medical University
+601-700 Bilkent University
+601-700 China Medical University (Shenyang)
+601-700 China University of Mining and Technology - Xuzhou
+601-700 Chonbuk National University
+601-700 Chungnam National University
+601-700 College of  William and Mary
+601-700 Concordia University
+601-700 Czech Technical University in Prague
+601-700 Donghua University
+601-700 Federal University of Santa Catarina
+601-700 Fuzhou University
+601-700 International School for Advanced Studies
+601-700 Jiangnan University
+601-700 Konkuk University
+601-700 Medical College of Wisconsin
+601-700 Michigan Technological University
+601-700 Montana State University
+601-700 National Central University
+601-700 New Jersey Institute of Technology
+601-700 Northwest University
+601-700 Ohio University
+601-700 PalackÃ½ University
+601-700 Polytechnic University of Turin
+601-700 Saitama University
+601-700 Semmelweis University
+601-700 Stevens Institute of Technology
+601-700 Syracuse University
+601-700 Tarbiat Modares University
+601-700 The Royal Veterinary College
+601-700 Tokyo Medical and Dental University
+601-700 Tokyo University of Agriculture and Technology
+601-700 University of Auvergne
+601-700 University of Burgundy
+601-700 University of Canberra
+601-700 University of Cyprus
+601-700 University of Haifa
+601-700 University of Hull
+601-700 University of Jyvaskyla
+601-700 University of Louisville
+601-700 University of Modena and Reggio Emilia
+601-700 University of Neuchatel
+601-700 University of Regina
+601-700 University of Sherbrooke
+601-700 University of Tampere
+601-700 University Putra Malaysia
+601-700 Vilnius University
+601-700 Xidian University
+701-800 Agroparistech
+701-800 Anhui Medical University
+701-800 Brescia University
+701-800 Carleton University
+701-800 Chongqing Medical University
+701-800 CUNY Hunter College
+701-800 Federal University of Pernambuco
+701-800 Federal University of ViÃ§osa
+701-800 Free University of Bozen-Bolzano
+701-800 Hangzhou Dianzi University
+701-800 Harbin Medical University
+701-800 Indian Institute of Technology Bombay
+701-800 Indian Institute of Technology Kharagpur
+701-800 Isfahan University of Technology
+701-800 Jawaharlal Nehru University
+701-800 Kangwon National University
+701-800 Lehigh University
+701-800 Liverpool John Moores University
+701-800 Loughborough University
+701-800 Nagasaki University
+701-800 Nanjing Normal University
+701-800 National Chung Hsing University
+701-800 National University of Colombia
+701-800 Niigata University
+701-800 Prince of Songkla University
+701-800 Quaid-i-Azam University
+701-800 Sejong University
+701-800 Shinshu University
+701-800 Southern Methodist University
+701-800 Swarthmore College
+701-800 The University of Waikato
+701-800 Universidad AndrÃ©s Bello
+701-800 University of Arkansas for Medical Sciences
+701-800 University of Calabria
+701-800 University of Cordoba
+701-800 University of Italian speaking Switzerland
+701-800 University of Louisiana at Lafayette
+701-800 University of Murcia
+701-800 University of Nevada - Reno
+701-800 University of New England
+701-800 University of Ontario Institute of Technology
+701-800 University of Salamanca
+701-800 University of San Francisco
+701-800 University of South Africa
+701-800 University of the Sunshine Coast
+701-800 University of Udine
+701-800 University Rovira i Virgili
+701-800 Warsaw University of Technology
+701-800 Yangzhou University
+701-800 Yunnan University
+801-900 Ariel University
+801-900 Banaras Hindu University
+801-900 Beijing University of Posts and Telecommunications
+801-900 CENTRALESUPELEC
+801-900 Chiang Mai University
+801-900 City University New York - Baruch College
+801-900 Ege University
+801-900 Federal University of GoiÃ¡s
+801-900 Federal University of Santa Maria
+801-900 Fluminense Federal University
+801-900 Gachon University
+801-900 Graz University of Technology
+801-900 Gwangju Institute of Science and Technology
+801-900 Huaqiao University
+801-900 Indian Institute of Technology Kanpur
+801-900 Indian Institutes of Science Education and Research (IISERs)
+801-900 ITMO University
+801-900 Kagoshima University
+801-900 Kindai University
+801-900 Kwangwoon University
+801-900 Lappeenranta University of Technology
+801-900 Mansoura University
+801-900 Meijo University
+801-900 Missouri University of Science and Technology
+801-900 National Taiwan University of Science and Technology
+801-900 NHH - Norwegian School of Economics
+801-900 Ningbo University
+801-900 Plymouth University
+801-900 Rio de Janeiro State University
+801-900 Shanxi University
+801-900 Singapore University of Technology & Design
+801-900 Sogang University
+801-900 Taiyuan University of Technology
+801-900 The University of Akron
+801-900 Uniformed Services University of the Health Sciences - USA
+801-900 Universite de Tunis El Manar
+801-900 University of AlcalÃ¡
+801-900 University of Bucharest
+801-900 University of CastillaâLa Mancha
+801-900 University of Denver
+801-900 University of L'Aquila
+801-900 University of Magdeburg
+801-900 University of Mississippi
+801-900 University of Orleans
+801-900 University of San Diego
+801-900 University of Sfax
+801-900 University of the Punjab
+801-900 University of Valladolid
+801-900 Worcester Polytechnic Institute
+801-900 Zhejiang University of Technology
+901-1000 Aga Khan University
+901-1000 Anhui University
+901-1000 Aston University
+901-1000 Beijing University of Chinese Medicine
+901-1000 Binghamton University
+901-1000 Carlos III University of Madrid
+901-1000 Charles Sturt University
+901-1000 Coventry University
+901-1000 Dalian Medical University
+901-1000 Federal University of Bahia
+901-1000 Guangxi University
+901-1000 Hebei Medical University
+901-1000 Hunan Normal University
+901-1000 INSA Lyon
+901-1000 Iran University of Medical Sciences
+901-1000 Johannes Kepler University Linz
+901-1000 Kyoto Sangyo University
+901-1000 Makerere University
+901-1000 Metropolitan Autonomous University
+901-1000 Nanjing University of Posts and Telecommunications
+901-1000 National Research University Higher School of Economics
+901-1000 Nicolaus Copernicus University
+901-1000 Osaka Prefecture University
+901-1000 Pukyong National University
+901-1000 Rutgers University-Newark
+901-1000 Saint Petersburg State Polytechnical University
+901-1000 Shantou University
+901-1000 Sichuan Agricultural University
+901-1000 Soonchunhyang University
+901-1000 The University of Memphis
+901-1000 Tomsk Polytechnic University
+901-1000 Universidade Federal de Mato Grosso do Sul
+901-1000 University of Alabama in Huntsville
+901-1000 University of Chieti-Pescara
+901-1000 University of Eastern Piedmont
+901-1000 University of Hertfordshire
+901-1000 University of Lodz
+901-1000 University of Maryland Center for Environmental Science
+901-1000 University of Massachusetts Lowell
+901-1000 University of Missouri-Kansas City
+901-1000 University of New Brunswick
+901-1000 University of Novi Sad
+901-1000 University of Paderborn
+901-1000 University of Salzburg
+901-1000 University of South Bohemia
+901-1000 University of Stirling
+901-1000 University of Tromso
+901-1000 University of Wroclaw
+901-1000 University of Yamanashi
+901-1000 Yildiz Technical University
+501-600 Ajou University
+501-600 Australian Catholic University
+501-600 Baylor University
+501-600 Beijing University of Technology
+501-600 Chonnam National University
+501-600 Chungbuk National University
+501-600 CUNY Graduate School and University Center
+501-600 Ewha Womans University
+501-600 Georgia State University
+501-600 Hacettepe University
+501-600 Hiroshima University
+501-600 Humanitas University
+501-600 Kitasato University
+501-600 Macau University of Science and Technology
+501-600 Marche Polytechnic University
+501-600 Massey University
+501-600 National Chiao Tung University
+501-600 National University of Cordoba
+501-600 National Yang Ming University
+501-600 North China Electric Power University
+501-600 Northwest A&F University
+501-600 Osaka City University
+501-600 Pusan National University
+501-600 Saarland University
+501-600 Sharif University of Technology
+501-600 Southern Medical University
+501-600 State University of New York Health Science Center at Brooklyn
+501-600 Technical University of Braunschweig
+501-600 Tehran University of Medical Sciences
+501-600 The University of Texas at Arlington
+501-600 Tilburg University
+501-600 University of Alaska - Fairbanks
+501-600 University of Bari
+501-600 University of Coimbra
+501-600 University of Genoa
+501-600 University of Idaho
+501-600 University of Macau
+501-600 University of Maryland, Baltimore County
+501-600 University of Oulu
+501-600 University of Perugia
+501-600 University of Potsdam
+501-600 University of Regensburg
+501-600 University of Roma - Tor Vergata
+501-600 University of Strathclyde
+501-600 University of the Balearic Islands
+501-600 University of Trieste
+501-600 University of Versailles Saint-Quentin-en-Yvelines
+501-600 University of Zagreb
+501-600 Wake Forest University
+501-600 York University
+601-700 AGH University of Science and Technology
+601-700 American University of Beirut
+601-700 BabeÈ-Bolyai University
+601-700 Catholic University of Korea
+601-700 China University of Geosciences (Beijing)
+601-700 China University of Petroleum - Beijing
+601-700 Chung-Ang University
+601-700 Clemson University
+601-700 COMSATS University Islamabad
+601-700 Copenhagen Business School
+601-700 Dokuz Eylul University
+601-700 Erciyes University
+601-700 Federal University of Sao Paulo
+601-700 Indian Institute of Technology Madras
+601-700 Iran University of Science & Technology
+601-700 Jiangsu University
+601-700 Loyola University Chicago
+601-700 Memorial University of Newfoundland
+601-700 Miguel Hernandez University of Elche
+601-700 Murdoch University
+601-700 National University of Defense Technology
+601-700 Naval Medical University
+601-700 Northeast Normal University
+601-700 Norwegian University of Life Sciences
+601-700 Old Dominion University
+601-700 Polytechnic University of Catalonia
+601-700 Royal Holloway, University of London
+601-700 San Diego State University
+601-700 Southwest University
+601-700 SUNY Upstate Medical University
+601-700 Taipei Medical University
+601-700 The Open University
+601-700 Tianjin Medical University
+601-700 Tokyo Metropolitan University
+601-700 Tulane University
+601-700 University of BrasÃ­lia
+601-700 University of California-Merced
+601-700 University of Catania
+601-700 University of Giessen
+601-700 University of Hohenheim
+601-700 University of Johannesburg
+601-700 University of La Laguna
+601-700 University of Luxembourg
+601-700 University of Nebraska Medical Center
+601-700 University of New Orleans
+601-700 University of Rennes 1
+601-700 University of South Australia
+601-700 University of Veterinary Medicine Vienna
+601-700 Verona University
+601-700 Wenzhou Medical University
+701-800 Adam Mickiewicz University
+701-800 Ain Shams University
+701-800 Babol Noshirvani University of Technology
+701-800 Budapest University of Technology and Economics
+701-800 China University of Petroleum (Huadong)
+701-800 Comenius University in Bratislava
+701-800 Federal University of Ceara
+701-800 Federal University of Sao Carlos
+701-800 Guangzhou Medical University
+701-800 Hangzhou Normal University
+701-800 Hohai University
+701-800 Indian Institute of Technology Delhi
+701-800 INHA University
+701-800 Istanbul Technical University
+701-800 Kanazawa University
+701-800 Keele University
+701-800 Lincoln University
+701-800 London Business School
+701-800 Medical University Warsaw
+701-800 Military Medical University of the Air Force
+701-800 Nanchang University
+701-800 Nara Institute of Science and Technology
+701-800 National Sun Yat-Sen University
+701-800 National University of La Plata
+701-800 North-West University
+701-800 Qingdao University
+701-800 Renmin University of China
+701-800 Shahid Beheshti University of Medical Sciences
+701-800 South China Agricultural University
+701-800 Southwest Jiaotong University
+701-800 The Graduate University for Advanced Studies
+701-800 Tomsk State University
+701-800 University of Arkansas at Little Rock
+701-800 University of Cagliari
+701-800 University of Concepcion
+701-800 University of Delhi
+701-800 University of Jaen
+701-800 University of Messina
+701-800 University of Nantes
+701-800 University of Nevada-Las Vegas
+701-800 University of Nice Sophia Antipolis
+701-800 University of Poitiers
+701-800 University of Salerno
+701-800 University of Siena
+701-800 University of Tennessee Health Science Center
+701-800 University of Toledo
+701-800 University of Urbino
+701-800 Ural Federal University
+701-800 Yamagata University
+701-800 Yokohama City University
+801-900 Ankara University
+801-900 Asia University
+801-900 Beijing Forestry University
+801-900 Birkbeck, University of London
+801-900 Chemnitz University of Technology
+801-900 China Pharmaceutical University
+801-900 Edith Cowan University
+801-900 Ehime University
+801-900 Federal University of Rio Grande do Norte
+801-900 Ferdowsi University of Mashhad
+801-900 Fujian Agriculture Forestry University
+801-900 Gazi University
+801-900 Guizhou University
+801-900 Hallym University
+801-900 Huazhong Normal University
+801-900 Indian Institute of Technology Roorkee
+801-900 Inje university
+801-900 Juntendo University
+801-900 Kazan (Volga region) Federal University
+801-900 Kumamoto University
+801-900 Kyushu Institute of Technology
+801-900 Lulea University of Technology
+801-900 Medical University of Silesia
+801-900 Middle East Technical University
+801-900 National Polytechnic Institute of Toulouse
+801-900 New Mexico State University
+801-900 Nihon University
+801-900 Orebro University
+801-900 Portland State University
+801-900 Shaanxi Normal University
+801-900 Shiraz University
+801-900 Slovak University of Technology in Bratislava
+801-900 South China Normal University
+801-900 The National University of Science and Technology MISiS
+801-900 The University of Connecticut Health Center
+801-900 Union College
+801-900 Universiti Teknologi Malaysia
+801-900 University of Alicante
+801-900 University of Cantabria
+801-900 University of Crete
+801-900 University of Insubria
+801-900 University of Luebeck
+801-900 University of Malaga
+801-900 University of Mons
+801-900 University of Salento
+801-900 University of Sassari
+801-900 University of Tabriz
+801-900 University of the Republic - Uruguay
+801-900 Williams College
+801-900 Yanshan University
+901-1000 Abo Akad University
+901-1000 All India Institute of Medical Sciences
+901-1000 Anna University
+901-1000 AUT University
+901-1000 Beni-Suef University
+901-1000 Bogazici University
+901-1000 Changzhou University
+901-1000 City University London
+901-1000 Czech University of Life Sciences Prague
+901-1000 Ecole Normale Super Cachan
+901-1000 Florida Atlantic University
+901-1000 Haverford College
+901-1000 Henan University
+901-1000 Illinois Institute of Technology
+901-1000 Institute for Advanced Study of Pavia (IUSS)
+901-1000 Jadavpur University
+901-1000 Kunming University of Science and Technology
+901-1000 Lodz University of Technology
+901-1000 Marmara University
+901-1000 Middlesex University
+901-1000 Nantong University
+901-1000 National Taiwan Normal University
+901-1000 North Dakota State University-Main Campus
+901-1000 Panjab University
+901-1000 Qatar University
+901-1000 Sabanci University
+901-1000 Second University of Naples
+901-1000 Shizuoka University
+901-1000 Sofia University
+901-1000 South Dakota State University
+901-1000 Toho University
+901-1000 Universidade Federal de Lavras
+901-1000 Universidade Federal de Pelotas
+901-1000 University of Chemistry and Technology Prague
+901-1000 University of Debrecen
+901-1000 University of Greifswald
+901-1000 University of Limerick
+901-1000 University of Los Andes (Colombia)
+901-1000 University of Massachusetts Boston
+901-1000 University of Mississippi Medical Center
+901-1000 University of Navarra
+901-1000 University of North Carolina at Charlotte
+901-1000 University of Oklahoma Health Sciences Center
+901-1000 University of Patras
+901-1000 University of Savoy
+901-1000 University of St. Thomas
+901-1000 University of Toyama
+901-1000 University of Western Brittany
+901-1000 University of Wuppertal
+901-1000 Wroclaw University of Technology

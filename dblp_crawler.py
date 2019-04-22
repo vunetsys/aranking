@@ -98,91 +98,91 @@ def get_papers(conference, thread_id):
     conference_id = conference[1]
     conf_id = str(conference_id)
     print("STARTING CONFERENCE WITH ID " + conf_id + " FOR THREAD " + str(thread_id))
-    author_ids = []
+    # author_ids = []
 
     s = get_html(url, thread_id)
     li = s.findAll("li", {"class": "entry inproceedings"})
     for l in li:
         divs = l.findAll("div", itemprop="headline")
         for d in divs:
-            span = d.findAll("span", itemprop="author")
+            # span = d.findAll("span", itemprop="author")
             title = d.find("span", {"class": "title"})
 
             paper_title = title.text.replace(".", "")
 
-            paper_id = database.add_paper(paper_title, conference_id)
-            paper_id = paper_id[0]
+            database.add_paper(paper_title, conference_id)
+            # paper_id = paper_id[0]
 
-            for sp in span:
-                name = sp.text
-                url = sp.find("a").get("href")
-                n = HumanName(name)
-                first_name = n.first
-                middle_name = n.middle
-                last_name = n.last
-                author_id = database.add_author(first_name, middle_name, last_name, url, 9999999)
-                database.add_author_paper(author_id[0], paper_id)
-                author_ids.append(author_id)
+        #     for sp in span:
+        #         name = sp.text
+        #         url = sp.find("a").get("href")
+        #         n = HumanName(name)
+        #         first_name = n.first
+        #         middle_name = n.middle
+        #         last_name = n.last
+        #         author_id = database.add_author(first_name, middle_name, last_name, url, 9999999)
+        #         database.add_author_paper(author_id[0], paper_id)
+        #         author_ids.append(author_id)
+        #
+        # print("THREAD " + str(thread_id) + " DONE")
+        # database.put_connection()
+        # return author_ids
 
-        print("THREAD " + str(thread_id) + " DONE")
-        database.put_connection()
-        return author_ids
-
-
-def get_author(author_id, thread_id):
-    print("STARTING AUTHOR SEARCH FOR THREAD: " + str(thread_id))
-    database = ThreadDb()
-
-    database.c.execute("SELECT * FROM AUTHORS WHERE id=%s", (author_id,))
-    author = database.c.fetchone()
-
-    url = author[4]
-    s = get_html(url, thread_id)
-    is_affiliated = s.find("li", itemprop="affiliation")
-
-    if is_affiliated:
-        affiliated_to = is_affiliated.find("span", itemprop="name")
-        parse_affiliation(affiliated_to.text)
-        # affiliation_id = database.add_affiliation(affiliated_to.text)
-        print("AFFILIATION FOUND!")
-        database.c.execute("UPDATE AUTHORS SET affiliation_id=%s WHERE id=%s", (affiliation_id, author_id,))
-        database.conn.commit()
-        database.put_connection()
-    else:
-        print("NO AFFILIATION FOUND!")
-        database.c.execute("UPDATE AUTHORS SET affiliation_id=0 WHERE id=%s", (author_id,))
-        database.conn.commit()
-        database.put_connection()
-
-
-def parse_affiliation(info):
-    with open("countries.txt") as f:
-        countries = f.read()
-
-    # print(info)
-    aff_id = info[0]
-    affiliation = info[1]
-
-    affiliation = affiliation.replace(", ", ",")
-    aff_info = affiliation.split(",")
-
-    if len(aff_info) > 1:
-        affiliation = aff_info[:-1]
-        potential_country = aff_info[-1]
-    else:
-        if aff_info:
-            affiliation = None
-            potential_country = aff_info[0]
-
-    if potential_country in countries:
-        country = potential_country
-        if affiliation:
-            aff = ""
-            aff = aff.join(affiliation)
-        else:
-            aff = None
-
-        db.update_affiliation(aff, country, aff_id)
+#
+# def get_author(author_id, thread_id):
+#     print("STARTING AUTHOR SEARCH FOR THREAD: " + str(thread_id))
+#     database = ThreadDb()
+#
+#     database.c.execute("SELECT * FROM AUTHORS WHERE id=%s", (author_id,))
+#     author = database.c.fetchone()
+#
+#     url = author[4]
+#     s = get_html(url, thread_id)
+#     is_affiliated = s.find("li", itemprop="affiliation")
+#
+#     if is_affiliated:
+#         affiliated_to = is_affiliated.find("span", itemprop="name")
+#         parse_affiliation(affiliated_to.text)
+#         # affiliation_id = database.add_affiliation(affiliated_to.text)
+#         print("AFFILIATION FOUND!")
+#         database.c.execute("UPDATE AUTHORS SET affiliation_id=%s WHERE id=%s", (affiliation_id, author_id,))
+#         database.conn.commit()
+#         database.put_connection()
+#     else:
+#         print("NO AFFILIATION FOUND!")
+#         database.c.execute("UPDATE AUTHORS SET affiliation_id=0 WHERE id=%s", (author_id,))
+#         database.conn.commit()
+#         database.put_connection()
+#
+#
+# def parse_affiliation(info):
+#     with open("docs/countries.txt") as f:
+#         countries = f.read()
+#
+#     # print(info)
+#     aff_id = info[0]
+#     affiliation = info[1]
+#
+#     affiliation = affiliation.replace(", ", ",")
+#     aff_info = affiliation.split(",")
+#
+#     if len(aff_info) > 1:
+#         affiliation = aff_info[:-1]
+#         potential_country = aff_info[-1]
+#     else:
+#         if aff_info:
+#             affiliation = None
+#             potential_country = aff_info[0]
+#
+#     if potential_country in countries:
+#         country = potential_country
+#         if affiliation:
+#             aff = ""
+#             aff = aff.join(affiliation)
+#         else:
+#             aff = None
+#
+#         db.update_affiliation(aff, country, aff_id)
         # print("FOUND COUNTRY", potential_country)
 
     # s = get_html(url, thread_id)

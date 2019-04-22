@@ -4,19 +4,19 @@ from difflib import SequenceMatcher
 from time import sleep
 
 
-def get_html(url, thread_id):
+def get_html(url):
     try:
         page = requests.get(url)
         if str(page.status_code) == "429":
             raise TooManyRequests
         text = page.text
-        sleep(1)
+        # sleep(1)
         return BeautifulSoup(text, "html.parser")
     except TooManyRequests:
         print("Error! Too many requests to url " + url + "  for thread: " + str(thread_id) +
               ". Trying again in 4 mins.")
         sleep(300)
-        return get_html(url, thread_id)
+        return get_html(url)
 
 
 def similar(a, b):

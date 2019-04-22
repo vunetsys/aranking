@@ -28,6 +28,30 @@ import psycopg2 as p
 # year text, volume text UNIQUE, venue_id INTEGER, FOREIGN KEY(venue_id) REFERENCES venues(id)) ''')
 
 
+def remove_duplicate_affiliations():
+    conn = p.connect(database='academicrankings', user='lucasfaijdherbe')
+    c = conn.cursor()
+
+    c.execute("select affiliation, country from affiliations group by affiliation, "
+              "country having count(*) > 1 order by country asc")
+
+    double_values = c.fetchall()
+
+    for value in double_values:
+        affiliation = value[0]
+        country = value[1]
+        c.execute("SELECT id FROM affiliations WHERE affiliation=%s AND country=%s", (affiliation, country))
+        ids = c.fetchall()
+
+        new_id = ids[0][0]
+
+        for id in ids[1:]:
+            old_id = id[0]
+            c.execute("UPDATE authors SET affiliation_id=%s WHERE affiliation_id=%s", (new_id, old_id))
+            c.execute("DELETE FROM affiliations where id=%s", (old_id,))
+            conn.commit()
+
+
 class Database:
 
     def __init__(self):
@@ -96,6 +120,10 @@ class Database:
         self.c.execute("SELECT url, id FROM conferences WHERE venue_id=%s ORDER BY id ASC", (venue_id,))
         return self.c.fetchall()
 
+    def get_affiliations(self):
+        self.c.execute("SELECT id, affiliation, country from affiliations")
+        return self.c.fetchall()
+
     # def add_journal_entry(self, name, url, year, journal_id):
     #     try:
     #         self.c.execute("INSERT INTO journals(name, url, year, venue_id) VALUES (?,?,?,?)", (name, url, year,
@@ -107,3 +135,5 @@ class Database:
     # def get_journals(self):
     #     self.c.execute("SELECT url, id FROM venues WHERE type='Journal' and id > 177")
     #     return self.c.fetchall()
+
+remove_duplicate_affiliations()
