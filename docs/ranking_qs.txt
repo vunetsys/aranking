@@ -1,0 +1,1425 @@
+349 Qatar University
+Matches: Qatar University
+801-1000 Universidad Nacional de Cuyo
+Matches: Universidad Nacional de Cuyo
+551-600 Universidad Nacional de La Plata
+Matches: Universidad Nacional de La Plata
+801-1000 Universidad Nacional de Mar del Plata
+Matches: Universidad Nacional de Mar del Plata
+801-1000 Universidad Nacional de Rosario
+Matches: Universidad Nacional de Rosario
+801-1000 Universidad Nacional del Sur
+Matches: Universidad Nacional del Sur
+801-1000 Universidad Tecnologica Nacional
+Matches: Universidad Tecnológica Nacional
+651-700 Universidad Torcuato Di Tella
+Matches: Universidad Torcuato Di Tella
+75 Universidad de Buenos Aires
+Matches: Universidad de Buenos Aires
+801-1000 Australian Catholic University
+Matches: Australian Catholic University
+441-450 Bangor University
+Matches: Bangor University
+431-440 Bond University
+Matches: Bond University
+601-650 Central Queensland University
+Matches: Central Queensland University
+651-700 Charles Darwin University
+Matches: Charles Darwin University
+801-1000 Charles Sturt University
+Matches: Charles Sturt University
+262 Curtin University
+Matches: Curtin University
+293 Deakin University
+Matches: Deakin University
+551-600 Flinders University
+Matches: Flinders University
+325 Griffith University
+Matches: Griffith University
+367 James Cook University
+Matches: James Cook University
+360 La Trobe University
+Matches: La Trobe University
+240 Macquarie University
+Matches: Macquarie University
+60 Monash University
+Matches: Monash University
+501-550 Murdoch University
+Matches: Murdoch University
+247 Queensland University of Technology
+Matches: Queensland University of Technology
+247 RMIT University
+Matches: RMIT University
+801-1000 Southern Cross University
+Matches: Southern Cross University
+421-430 Swinburne University of Technology
+Matches: Swinburne University of Technology
+109 The University of Adelaide
+Matches: The University of Adelaide
+50 The University of Sydney
+Matches: The University of Sydney
+551-600 University of Canberra
+Matches: University of Canberra
+801-1000 University of New England Australia
+Matches: University of New England Australia
+279 University of South Australia
+Matches: University of South Australia
+751-800 University of Southern Queensland
+Matches: University of Southern Queensland
+313 University of Tasmania
+Matches: University of Tasmania
+176 University of Technology Sydney
+Matches: University of Technology Sydney
+232 University of Wollongong
+Matches: University of Wollongong
+801-1000 University of the Sunshine Coast
+Matches: University of the Sunshine Coast
+551-600 Western Sydney University
+Matches: Western Sydney University
+137 Aalto University
+Matches: Aalto University
+501-550 Graz University of Technology
+Matches: Graz University of Technology
+471-480 Johannes Kepler Universitat Linz
+Matches: Johannes Kepler University Linz
+471-480 Karl-Franzens-Universitat Graz
+Matches: Karl-Franzens-Universitaet Graz
+28 Northeastern University
+Matches: Northwestern University
+801-1000 University of Bahrain
+Matches: University of Bahrain
+501-550 Southeast University
+Matches: Southeast University
+701-750 University of Dhaka
+Matches: University of Dhaka
+471-480 Tianjin University
+Matches: Tianjin University
+801-1000 Pontificia Universidade Catolica do Rio Grande do Sul
+Matches: Pontifícia Universidade Católica do Rio Grande do Sul
+501-550 Pontificia Universidade Catolica do Rio de Janeiro
+Matches: Pontifícia Universidade Católica do Rio de Janeiro
+182 Universidade Estadual de Campinas
+Matches: Universidade Estadual de Campinas
+801-1000 Universidade Estadual de Londrina
+Matches: Universidade Estadual de Londrina
+801-1000 Universidade Federal Fluminense
+Matches: Universidade Federal Fluminense
+801-1000 Universidade Federal da Bahia
+Matches: Universidade Federal da Bahia
+551-600 Universidade Federal de Minas Gerais
+Matches: Universidade Federal de Minas Gerais
+801-1000 Universidade Federal de Pernambuco
+Matches: Universidade Federal de Pernambuco
+751-800 Universidade Federal de Santa Catarina
+Matches: Universidade Federal de Santa Catarina
+801-1000 Universidade Federal de Santa Maria
+Matches: Universidade Federal de Santa Maria
+651-700 Universidade Federal de Sao Carlos
+Matches: Universidade Federal de São Carlos
+501-550 Universidade Federal de Sao Paulo
+Matches: Universidade Federal de São Paulo
+801-1000 Universidade Federal de Vicosa
+Matches: Universidade Federal de Viçosa
+801-1000 Universidade Federal do Ceara
+Matches: Universidade Federal do Ceará
+501-550 Universidade Federal do Rio Grande do Sul
+Matches: Universidade Federal do Rio Grande Do Sul
+311 Universidade Federal do Rio de Janeiro
+Matches: Universidade Federal do Rio de Janeiro
+651-700 Universidade de Brasília
+Matches: Universidade de Brasília
+801-1000 Universidade do Estado do Rio de Janeiro
+Matches: Universidade do Estado do Rio de Janeiro
+701-750 Sofia University St. Kliment Ohridski
+Matches: Sofia University "St. Kliment Ohridski"
+651-700 Carleton University
+Matches: Carleton University
+279 Dalhousie University
+Matches: Dalhousie University
+267 King Abdulaziz University
+Matches: King Abdulaziz University
+32 McGill University
+Matches: McGill University
+140 McMaster University
+Matches: McMaster University
+701-750 Memorial University of Newfoundland
+Matches: Memorial University of Newfoundland
+801-1000 Ryerson University
+Matches: Ryerson University
+245 Simon Fraser University
+Matches: Simon Fraser University
+90 University of Alberta
+Matches: University of Alberta
+51 University of British Columbia
+Matches: University of British Columbia
+51 University of British Columbia
+
+Matches: University of British Columbia
+217 University of Calgary
+Matches: University of Calgary
+491-500 University of Guelph
+Matches: University of Guelph
+551-600 University of Manitoba
+Matches: University of Manitoba
+451-460 University of Saskatcehwan
+Matches: University of Saskatchewan
+451-460 University of Saskatchewan
+Matches: University of Saskatchewan
+31 University of Toronto
+Matches: University of Toronto
+441-450 University of Trento
+Matches: University of Trento
+346 University of Victoria
+Matches: University of Victoria
+152 University of Waterloo
+Matches: University of Waterloo
+651-700 University of Windsor
+Matches: University of Windsor
+378 Université Laval
+Matches: Université Laval
+130 Université de Montréal
+Matches: Université de Montréal
+601-650 Université de Sherbrooke
+Matches: Université de Sherbrooke
+441-450 York University
+Matches: York University
+137 Pontificia Universidad Católica de Chile
+Matches: Pontificia Universidad Católica de Chile
+701-750 Pontificia Universidad Católica de Valparaíso
+Matches: Pontificia Universidad Católica de Valparaíso
+651-700 Universidad Adolfo Ibáñez
+Matches: Universidad Adolfo Ibàñez
+801-1000 Universidad Austral de Chile
+Matches: Universidad Austral de Chile
+751-800 Universidad Diego Portales
+Matches: Universidad Diego Portales
+801-1000 Universidad Técnica Federico Santa María
+Matches: Universidad Técnica Federico Santa María
+201 Universidad de Chile
+Matches: Universidad de Chile
+451-460 Universidad de Santiago de Chile
+Matches: Universidad de Santiago de Chile
+801-1000 Universidad de Talca
+Matches: Universidad de Talca
+801-1000 Universidad de Valparaiso
+Matches: Universidad de Valparaíso
+801-1000 Universidad de Valparaso
+Matches: Universidad de Valparaíso
+201 Universidad de Chile
+Matches: Universidad de Chile
+451-460 Bei Jing Institute of Technology
+Matches: Beijing Institute of Technology
+551-600 Beihang University
+Matches: Beihang University
+651-700 Beijing Foreign Studies University
+Matches: Beijing Foreign Studies University
+451-460 Beijing Institute of Technology
+Matches: Beijing Institute of Technology
+701-750 Beijing Jiaontong University
+Matches: Beijing Jiaotong University
+701-750 Beijing Jiaotong University
+Matches: Beijing Jiaotong University
+256 Beijing Normal University
+Matches: Beijing Normal University
+701-750 Beijing University of Technology
+Matches: Beijing University of Technology
+411-420 Brandeis University
+Matches: Brandeis University
+701-750 China Agricultural University
+Matches: China Agricultural University
+801-1000 Chonging University
+Matches: Chongqing University
+801-1000 Chongqing University
+Matches: Chongqing University
+551-600 Dalian University of Technology
+Matches: Dalian University of Technology
+293 Deakin University
+Matches: Deakin University
+501-550 East China Normal University
+Matches: East China Normal University
+551-600 East China University of Science and Technology
+Matches: East China University of Science and Technology
+59 Ecole Polytechnique
+Matches: Ecole Polytechnique
+40 Fudan University
+Matches: Fudan University
+325 Harbin Institute of Technology
+Matches: Harbin Institute of Technology
+471-480 Huazhong University of Science and Technology
+Matches: Huazhong University of Science and Technology
+701-750 Hunan University
+Matches: Hunan University
+491-500 Jilin University
+Matches: Jilin University
+601-650 Lanzhou University
+Matches: Lanzhou University
+551-600 Lingnan University, Hong Kong
+Matches: Lingnan University, Hong Kong
+651-700 Missouri University of Science and Technology
+Matches: Missouri University of Science and Technology
+114 Nanjing University
+Matches: Nanjing University
+344 Nankai University
+Matches: Nankai University
+391 National Central University
+Matches: National Central University
+801-1000 PLA University of Science and Technology
+Matches: AGH University of Science and Technology
+38 Peking University
+Matches: Peking University
+551-600 Shandong University
+Matches: Shandong University
+62 Shanghai Jiao Tong University
+Matches: Shanghai Jiao Tong University
+421-430 Shanghai University
+Matches: Shanghai University
+801-1000 Shinshu University
+Matches: Shinshu University
+551-600 Sichuan University
+Matches: Sichuan University
+551-600 South China University of Technology
+Matches: South China University of Technology
+501-550 Southeast University
+Matches: Southeast University
+319 Sun Yat-Sen University
+Matches: Sun Yat-sen University
+471-480 Tianjin University
+Matches: Tianjin University
+316 Tongji University
+Matches: Tongji University
+25 Tsinghua University
+Matches: Tsinghua University
+551-600 University of Science and Technology Beijing
+Matches: University of Science and Technology Beijing
+282 Wuhan University
+Matches: Wuhan University
+344 Xi'an Jiaotong University
+Matches: Xi’an Jiaotong University
+431-440 Xiamen University
+Matches: Xiamen University
+87 Zhejiang University
+Matches: Zhejiang University
+461-470 Pontificia Universidad Javeriana
+Matches: Pontificia Universidad Javeriana
+254 Universidad Nacional de Colombia
+Matches: Universidad Nacional de Colombia
+601-650 Universidad de Antioquia
+Matches: Universidad de Antioquia
+801-1000 Universidad del Rosario
+Matches: Universidad del Rosario
+801-1000 Universidad Nacional de Costa Rica
+Matches: Universidad Nacional Costa Rica
+411-420 Universidad de Costa Rica
+Matches: Universidad de Costa Rica
+601-650 University of Zagreb
+Matches: University of Zagreb
+801-1000 University of Central Lancashire
+Matches: University of Central Lancashire
+601-650 Brno University of Technology
+Matches: Brno University of Technology
+314 Charles University
+Matches: Charles University
+551-600 Masaryk University
+Matches: Masaryk University
+501-550 University of Szeged
+Matches: University of Szeged
+384 University of Southern Denmark
+Matches: University of Southern Denmark
+701-750 Universidad San Francisco de Quito
+Matches: Universidad San Francisco de Quito
+701-750 Ain Shams University
+Matches: Ain Shams University
+751-800 Alexandria University
+Matches: Alexandria University
+481-490 Cairo University
+Matches: Cairo University
+601-650 Tallinn University of Technology
+Matches: Tallinn University of Technology
+314 University of Tartu
+Matches: University of Tartu
+314 University of Taru
+Matches: University of Tartu
+137 Aalto University
+Matches: Aalto University
+551-600 Abo Akademi University
+Matches: Abo Akademi University
+195 Stockholm University
+Matches: Stockholm University
+380 Tampere University of Technology
+Matches: Tampere University of Technology
+441-450 University of Trento
+Matches: University of Trento
+330 Ecole Normale Superieure de Cachan
+Matches: Ecole Normale Supérieure de Cachan
+330 Ecole Normale Suprieure de Cachan
+Matches: Ecole Normale Supérieure de Cachan
+157 Ecole Normale Supérieure de Lyon
+Matches: École Normale Supérieure de Lyon
+59 Ecole Polytechnique
+Matches: Ecole Polytechnique
+501-550 Université Claude Bernard Lyon 1
+Matches: Université Claude Bernard Lyon 1
+801-1000 Université Jean Moulin Lyon 3
+Matches: Université Jean Moulin Lyon 3
+751-800 Université Lumière Lyon 2
+Matches: Université Lumière Lyon 2
+601-650 Université Nice Sophia Antipolis
+Matches: Université Nice Sophia Antipolis
+293 Université Paris-Sorbonne
+Matches: Université Paris-Sorbonne
+381 Université de Montpellier
+Matches: Université de Montpellier
+651-700 Université de Rennes
+Matches: Université de Rennes 1
+303 Université de Strasbourg
+Matches: Université de Strasbourg
+431-440 Christian-Albrechts-Universität zu Kiel
+Matches: Christian-Albrechts-University zu Kiel
+287 Friedrich-Alexander-University Erlangen-Nürnberg
+Matches: Friedrich-Alexander-Universität Erlangen-Nürnberg
+120 Humboldt-Universität zu Berlin
+Matches: Humboldt-Universität zu Berlin
+398 Johannes Gutenberg Universität Mainz
+Matches: Johannes Gutenberg Universität Mainz
+481-490 Julius-Maximilians-Universität Würzburg
+Matches: Julius-Maximilians-Universität Würzburg
+66 Ludwig-Maximilians-Universität München
+Matches: Ludwig-Maximilians-Universität München
+551-600 Philipps-Universität Marburg
+Matches: Philipps-Universität Marburg
+401-410 Ruhr-Universitat Bochum
+Matches: Ruhr-Universität Bochum
+601-650 TU Dortmund University
+Matches: TU Dortmund University
+64 Technical University of Munich
+Matches: Technical University of Munich
+501-550 Technische Universität Braunschweig
+Matches: Technische Universität Braunschweig
+501-550 Technische Universität Braunschweiger
+Matches: Technische Universität Braunschweig
+272 Technische Universität Darmstadt
+Matches: Technische Universität Darmstadt
+195 Technische Universität Dresden
+Matches: Technische Universität Dresden
+331 University of Cologne
+Matches: University of Cologne
+181 University of Güttingen
+Matches: University of Göttingen
+801-1000 University of Siena
+Matches: University of Siena
+601-650 Universität Duisburg-Essen
+Matches: Universität Duisburg-Essen
+223 Universität Hamburg
+Matches: Universität Hamburg
+385 Universität Konstanz
+Matches: Universität Konstanz
+501-550 Universität Leipzig
+Matches: Universität Leipzig
+388 Universität Mannheim
+Matches: Universität Mannheim
+461-470 Universität Potsdam
+Matches: Universität Potsdam
+501-550 Universität Regensburg
+Matches: Universität Regensburg
+801-1000 Universität Rostock
+Matches: Universität Rostock
+259 Universität Stuttgart
+Matches: Universität Stuttgart
+501-550 Universität des Saarlandes
+Matches: Universität des Saarlandes
+801-1000 Université de Cergy-Pontoise
+Matches: Université de Cergy-Pontoise
+308 Westfälische Wilhelms-Universität Münster
+Matches: Westfälische Wilhelms-Universität Münster
+801-1000 University of Ghana
+Matches: University of Ghana
+501-550 Aristotle University of Thessaloniki
+Matches: Aristotle University of Thessaloniki
+801-1000 Athens University of Economics and Business
+Matches: Athens University of Economics and Business
+401-410 National Technical University of Athens
+Matches: National Technical University of Athens
+49 City University of Hong Kong
+Matches: City University of Hong Kong
+299 Hong Kong Baptist University
+Matches: Hong Kong Baptist University
+30 Hong Kong University of Science and Technology
+Matches: The Hong Kong University of Science and Technology
+26 The University of Hong Kong
+Matches: The University of Hong Kong
+751-800 Budapest University of Technology and Economics
+Matches: Budapest University of Technology and Economics
+651-700 Eötvös Loránd University
+Matches: Eötvös Lorànd University
+801-1000 Aligarh Muslim University
+Matches: Aligarh Muslim University
+651-700 Anna University
+Matches: Anna University
+801-1000 Banaras Hindu University
+Matches: Banaras Hindu University
+801-1000 Birla Institute of Technology and Science Pilani
+Matches: Birla Institute of Technology and Science, Pilani
+172 Indian Institute of Technology Delhi
+Matches: Indian Institute of Technology Delhi
+308 Indian Institute of Technology Kharagpur
+Matches: Indian Institute of Technology Kharagpur
+264 Indian Institute of Technology Madras
+Matches: Indian Institute of Technology Madras
+431-440 Indian Institute of Technology Roorkee
+Matches: Indian Institute of Technology Roorkee
+179 Indian Institute of Technology, Bombay
+Matches: Indian Institute of Technology Bombay
+501-550 Indian Institute of Technology, Guwahati
+Matches: Indian Institute of Technology Guwahati
+293 Indian Institute of Technology, Kanpur
+Matches: Indian Institute of Technology Kanpur
+601-650 Jadavpur University
+Matches: Jadavpur University
+801-1000 Savitribai Phule Pune University
+Matches: Savitribai Phule Pune University
+751-800 University of Calcutta
+Matches: University of Calcutta
+601-650 University of Hyderabad
+Matches: University of Hyderabad
+801-1000 University of Mumbai
+Matches: University of Mumbai
+501-550 Amirkabir University of Technology
+Matches: Amirkabir University of Technology
+551-600 Iran University of Science and Technology
+Matches: Iran University of Science and Technology
+801-1000 Shahid Behehsti University
+Matches: Shahid Beheshti University
+801-1000 Shahid Beheshti University
+Matches: Shahid Beheshti University
+471-480 Sharif University of Technology
+Matches: Sharif University of Technology
+601-650 University of Tehran
+Matches: University of Tehran
+471-480 Sharif University of Technology
+Matches: Sharif University of Technology
+501-550 University of Baghdad
+Matches: University of Baghdad
+601-650 University of Kufa
+Matches: University of Kufa
+391 Dublin City University
+Matches: Dublin City University
+701-750 Maynooth University
+Matches: Maynooth University
+243 National University of Ireland Galway
+Matches: National University of Ireland Galway
+201 Universidad de Chile
+Matches: Universidad de Chile
+283 University College Cork
+Matches: University College Cork
+168 University College Dublin
+Matches: University College Dublin
+501-550 University of Limerick
+Matches: University of Limerick
+551-600 Bar-Ilan University
+Matches: Bar-Ilan University
+224 Technion - Israel Institute of Technology
+Matches: Technion - Israel Institute of Technology
+205 Tel Aviv University
+Matches: Tel Aviv University
+601-650 University of Haifa
+Matches: University of Haifa
+701-750 Ca' Foscari University Venice
+Matches: Ca' Foscari University of Venice
+651-700 University of Milano - Bicocca
+Matches: University of Milano-Bicocca
+441-450 University of Trento
+Matches: University of Trento
+801-1000 Aoyama Gakuin University
+Matches: Aoyama Gakuin University
+501-550 Chiba University
+Matches: Chiba University
+801-1000 Doshisha University
+Matches: Doshisha University
+651-700 Gifu University
+Matches: Gifu University
+751-800 Gunma University
+Matches: Gunma University
+322 Hiroshima University
+Matches: Hiroshima University
+421-430 Hitotsubashi University
+Matches: Hitotsubashi University
+122 Hokkaido University
+Matches: Hokkaido University
+651-700 Kagoshima University
+Matches: Kagoshima University
+551-600 Kanazawa University
+Matches: Kanazawa University
+192 Keio University
+Matches: Keio University
+351 Kobe University
+Matches: Kobe University
+431-440 Koç University
+Matches: Koç University
+551-600 Kumamoto University
+Matches: Kumamoto University
+36 Kyoto University
+Matches: Kyoto University
+801-1000 Kyushu Institute of Technology
+Matches: Kyushu Institute of Technology
+128 Kyushu University
+Matches: Kyushu University
+801-1000 Meiji University
+Matches: Meiji University
+551-600 Nagasaki University
+Matches: Nagasaki University
+751-800 Nagoya Institute of Technology
+Matches: Nagoya Institute of Technology
+116 Nagoya University
+Matches: Nagoya University
+344 Nankai University
+Matches: Nankai University
+701-750 Niigata University
+Matches: Niigata University
+28 Northeastern University
+Matches: Northwestern University
+801-1000 Ochanomizu University
+Matches: Ochanomizu University
+501-550 Okayama University
+Matches: Okayama University
+551-600 Osaka City University
+Matches: Osaka City University
+701-750 Osaka Prefecture University
+Matches: Osaka Prefecture University
+63 Osaka University
+Matches: Osaka University
+801-1000 Ritsumeikan University
+Matches: Ritsumeikan University
+801-1000 Saitama University
+Matches: Saitama University
+801-1000 Shinshu University
+Matches: Shinshu University
+701-750 Sophia University
+Matches: Sophia University
+76 Tohoku University
+Matches: Tohoku University
+801-1000 Tokai University
+Matches: Tokai University
+56 Tokyo Institute of Technology
+Matches: Tokyo Institute of Technology
+367 Tokyo Medical and Dental University
+Matches: Tokyo Medical and Dental University
+651-700 Tokyo Metropolitan University
+Matches: Tokyo Metropolitan University
+551-600 Tokyo University of Agriculture and Technology
+Matches: Tokyo University of Agriculture and Technology
+701-750 Tokyo University of Science
+Matches: Tokyo University of Science
+191 University of Cape Town
+Matches: University of Cape Town
+21 University of Michigan
+Matches: University of Michigan
+250 University of Tsukuba
+Matches: University of Tsukuba
+203 Waseda University
+Matches: Waseda University
+751-800 Yamaguchi University
+Matches: Yamaguchi University
+501-550 Yokohama City University
+Matches: Yokohama City University
+751-800 Yokohama National University
+Matches: Yokohama National University
+551-600 Jordan University of Science and Technology
+Matches: Iran University of Science and Technology
+236 Al Farabi Kazakh National University
+Matches: Al-Farabi Kazakh National University
+651-700 Kazakh British Technical University
+Matches: Kazakh-British Technical University
+651-700 Riga Technical University
+Matches: Riga Technical University
+701-750 University of Latvia
+Matches: University of Latvia
+235 American University of Beirut
+Matches: American University of Beirut
+601-650 Lebanese American University
+Matches: Lebanese American University
+701-750 International Islamic University Malaysia
+Matches: International Islamic University Malaysia
+230 Universiti Kebangsaan Malaysia
+Matches: Universiti Kebangsaan Malaysia
+229 Universiti Putra Malaysia
+Matches: Universiti Putra Malaysia
+264 Universiti Sains Malaysia
+Matches: Universiti Sains Malaysia
+701-750 Universiti Utara Malaysia
+Matches: Universiti Utara Malaysia
+801-1000 Benemerita Universidad Autonoma de Puebla
+Matches: Benemérita Universidad Autónoma de Puebla
+651-700 Instituto Politécnico Nacional
+Matches: Instituto Politécnico Nacional
+651-700 Instituto Tecnológico Autonómo de México
+Matches: Instituto Tecnológico Autónomo de México
+751-800 Universidad Autónoma Metropolitana
+Matches: Universidad Autónoma Metropolitana
+801-1000 Universidad Autónoma de Nuevo León
+Matches: Universidad Autónoma de Nuevo León
+801-1000 Universidad Autónoma del Estado de México
+Matches: Universidad Autónoma del Estado de México
+122 Universidad Nacional Autónoma de México
+Matches: Universidad Nacional Autónoma de México
+801-1000 Universidad Panamericana
+Matches: Universidad Panamericana
+801-1000 Universidad de Guadalajara
+Matches: Universidad de Guadalajara
+801-1000 Universidad de Monterrey
+Matches: Universidad de Monterrey
+801-1000 Universidad de las Américas Puebla
+Matches: Universidad de las Américas Puebla
+92 University of St. Andrews
+Matches: University of St Andrews
+54 Delft University of Technology
+Matches: Delft University of Technology
+109 Leiden University
+Matches: Leiden University
+200 Maastricht University
+Matches: Maastricht University
+357 Tilburg University
+Matches: Tilburg University
+58 University of Amsterdam
+Matches: University of Amsterdam
+113 University of Groningen
+Matches: University of Groningen
+179 University of Twente
+Matches: University of Twente
+109 Utrecht University
+Matches: Utrecht University
+441-450 Auckland University of Technology
+Matches: Auckland University of Technology
+316 Massey University
+Matches: Massey University
+214 University of Canterbury
+Matches: University of Canterbury
+151 University of Otago
+Matches: University of Otago
+292 University of Waikato
+Matches: University of Waikato
+219 Victoria University of Wellington
+Matches: Victoria University of Wellington
+259 Norwegian University of Science and Technology
+Matches: Norwegian University of Science And Technology
+701-750 Lahore University of Management Sciences
+Matches: Lahore University of Management Sciences
+651-700 Quaid-i-Azam University
+Matches: Quaid-i-Azam University
+801-1000 University of Karachi
+Matches: University of Karachi
+801-1000 Universidad Peruana Cayetano Heredia
+Matches: Universidad Peruana Cayetano Heredia
+551-600 Ateneo de Manila University
+Matches: Ateneo de Manila University
+801-1000 AGH University of Science and Technology
+Matches: AGH University of Science and Technology
+601-650 University of Haifa
+Matches: University of Haifa
+801-1000 University of Lodz
+Matches: University of Lodz
+801-1000 University of Wrociaw
+Matches: University of Wroclaw
+801-1000 University of Wroclaw
+Matches: University of Wroclaw
+801-1000 Wrocław University of Science and Technology
+Matches: Wroclaw University of Science and Technolog
+361 Universidade Nova de Lisboa
+Matches: Universidade Nova de Lisboa
+301 University of Porto
+Matches: University of Porto
+59 Ecole Polytechnique
+Matches: Ecole Polytechnique
+227 Georgetown University
+Matches: Georgetown University
+349 Qatar University
+Matches: Qatar University
+291 Bauman Moscow State Technical University
+Matches: Bauman Moscow State Technical University
+601-650 Far Eastern Federal University
+Matches: Far Eastern Federal University
+95 Lomonosov Moscow State University
+Matches: Lomonosov Moscow State University
+373 National Research Nuclear University MEPhI
+Matches: National Research Nuclear University MEPhI
+382 National Research University Higher School of Economics
+Matches: National Research University Higher School of Economics
+801-1000 Novosibirsk State Technical University
+Matches: Novosibirsk State Technical University
+250 Novosibirsk State University
+Matches: Novosibirsk State University
+801-1000 Plekhanov Russian University of Economics
+Matches: Plekhanov Russian University of Economics
+501-550 RUDN University
+Matches: RUDN University
+240 Saint Petersburg State University
+Matches: Saint Petersburg State University
+801-1000 Samara National Research University
+Matches: Samara National Research University
+551-600 Southern Federal University
+Matches: Southern Federal University
+323 Tomsk State University
+Matches: Tomsk State University
+801-1000 Voronezh State University
+Matches: Voronezh State University
+751-800 Al Imam Mohammad Ibn Saud Islamic University
+Matches: Al-Imam Mohammad Ibn Saud Islamic University
+751-800 Al-Imam Muhammad Ibn Saud Islamic University
+Matches: Al-Imam Mohammad Ibn Saud Islamic University
+481-490 Cairo University
+Matches: Cairo University
+267 King Abdulaziz University
+Matches: King Abdulaziz University
+173 King Fahd University of Petroleum and Minerals
+Matches: King Fahd University of Petroleum & Minerals
+221 King Saud University
+Matches: King Saud University
+551-600 Umm Al Qura University
+Matches: Umm Al-Qura University
+801-1000 University of Belgrade
+Matches: University of Belgrade
+8 Imperial College Lonon
+Matches: Imperial College London
+15 National University of Singapore
+Matches: National University of Singapore
+441-450 Singapore Management University
+Matches: Singapore Management University
+651-700 University of Ljubljana
+Matches: University of Ljubljana
+801-1000 North-West University
+Matches: North-West University
+701-750 Rhodes University
+Matches: Rhodes University
+191 University of Cape Town
+Matches: University of Cape Town
+601-650 University of Johannesburg
+Matches: University of Johannesburg
+701-750 University of KwaZulu-Natal
+Matches: University of Kwazulu-Natal
+364 University of Witwatersrand
+Matches: University of Witwatersrand
+801-1000 University of the Western Cape
+Matches: University of the Western Cape
+651-700 Ajou University
+Matches: Ajou University
+501-550 Chonbuk National University
+Matches: Chonbuk National University
+601-650 Chonnam National University
+Matches: Chonnam National University
+801-1000 Chungnam National University
+Matches: Chungnam National University
+701-750 Dankook University
+Matches: Dankook University
+299 Ewha Womans University
+Matches: Ewha Womans University
+651-700 Hallym University
+Matches: Hallym University
+155 Hanyang University
+Matches: Hanyang University
+601-650 Inha University
+Matches: Inha University
+651-700 Konkuk University
+Matches: Konkuk University
+90 Korea University
+Matches: Korea University
+256 Kyung Hee University
+Matches: Kyung Hee University
+701-750 Kyungpook National University
+Matches: Kyungpook National University
+71 Pohang University of Science and Technology
+Matches: Pohang University of Science And Technology
+491-500 Pusan National University
+Matches: Pusan National University
+551-600 Sejong University
+Matches: Sejong University
+36 Seoul National University
+Matches: Seoul National University
+441-450 Sogang University
+Matches: Sogang University
+108 Sungkyunkwan University
+Matches: Sungkyunkwan University
+501-550 The Catholic University of Korea
+Matches: The Catholic University of Korea
+651-700 University of Seoul
+Matches: University of Seoul
+751-800 Yeungnam University
+Matches: Yeungnam University
+106 Yonsei University
+Matches: Yonsei University
+187 Universidad Autónoma de Madrid
+Matches: Universidad Autónoma de Madrid
+281 Universidad Carlos III de Madrid
+Matches: Universidad Carlos III de Madrid
+491-500 Universidad Politécnica de Madrid
+Matches: Universidad Politécnica de Madrid
+801-1000 Universidad Rey Juan Carlos
+Matches: Universidad Rey Juan Carlos
+551-600 Universidad de Alcala
+Matches: Universidad de Alcalá
+801-1000 Universidad de Castilla-La Mancha
+Matches: Universidad de Castilla-La Mancha
+801-1000 Universidad de Oviedo
+Matches: Universidad de Oviedo
+601-650 Universidad de Santiago de Compostela
+Matches: Universidade de Santiago de Compostela
+461-470 Universidad de Zaragoza
+Matches: Universidad de Zaragoza
+651-700 Universidad del Pais Vasco
+Matches: Universidad del Pais Vasco
+801-1000 Universidade da Coruña
+Matches: Universidade da Coruña
+195 Universitat Autònoma de Barcelona
+Matches: Universitat Autònoma de Barcelona
+373 Universitat Politècnica de València
+Matches: Universitat Politècnica de València
+156 Universitat de Barcelona
+Matches: Universitat de Barcelona
+441-450 University of Trento
+Matches: University of Trento
+751-800 University of Colombo
+Matches: University of Colombo
+133 Chalmers University of Technology
+Matches: Chalmers University of Technology
+145 The Hebrew University of Jerusalem
+Matches: The Hebrew University of Jerusalem
+167 University of Bern
+Matches: University of Bern
+73 University of Zurich
+Matches: University of Zurich
+269 Université Paris 1 Panthéon-Sorbonne
+Matches: Université Paris 1 Panthéon-Sorbonne
+481-490 Chang Gung University
+Matches: Chang Gung University
+801-1000 Feng Chia University
+Matches: Feng Chia University
+801-1000 Fu Jen Catholic University
+Matches: Fu Jen Catholic University
+222 National Cheng Kung University
+Matches: National Cheng Kung University
+601-650 National Chengchi University
+Matches: National Chengchi University
+601-650 National Chung Hsing University
+Matches: National Chung Hsing University
+601-650 National Taipei University of Technology
+Matches: National Taipei University of Technology
+289 National Taiwan Normal University
+Matches: National Taiwan Normal University
+76 National Taiwan University
+Matches: National Taiwan University
+264 National Taiwan University of Science and Technology
+Matches: National Taiwan University of Science and Technology
+161 National Tsing Hua University
+Matches: National Tsing Hua University
+601-650 Tainan University of Technology
+Matches: Tallinn University of Technology
+398 Taipei Medical University
+Matches: Taipei Medical University
+551-600 Chiang Mai University
+Matches: Chiang Mai University
+245 Chulalongkorn University
+Matches: Chulalongkorn University
+751-800 Kasetsart University
+Matches: Kasetsart University
+801-1000 Khon Kaen University
+Matches: Khon Kaen University
+334 Mahidol University
+Matches: Mahidol University
+801-1000 Prince of Songkla University
+Matches: Prince of Songkla University
+601-650 Thammasat University
+Matches: Thammasat University
+801-1000 Makerere University
+Matches: Makerere University
+501-550 National Technical University of Ukraine “Igor Sikorsky Kyiv Polytechnic Institute”
+Matches: National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute"
+401-410 V. N. Karazin Kharkiv National University
+Matches: V. N. Karazin Kharkiv National University
+751-800 Abu Dhabi University
+Matches: Abu Dhabi University
+601-650 American University in Dubai
+Matches: American University in Dubai
+411-420 American University of Sharjah
+Matches: American University of Sharjah
+137 Cardiff University
+Matches: Cardiff University
+390 United Arab Emirates University
+Matches: United Arab Emirates University
+701-750 University of Sharjah
+Matches: University of Sharjah
+481-490 Aberystwyth University
+Matches: Aberystwyth University
+481-490 Aberystywth University
+Matches: Aberystwyth University
+373 Aston University
+Matches: Aston University
+441-450 Bangor University
+Matches: Bangor University
+451-460 Beijing Institute of Technology
+Matches: Beijing Institute of Technology
+308 Birkbeck University of London
+Matches: Birkbeck, University of London
+701-750 Bournemouth University
+Matches: Bournemouth University
+346 Brunel University London
+Matches: Brunel University London
+137 Cardiff University
+Matches: Cardiff University
+343 City, University of London
+Matches: City, University of London
+551-600 Coventry University
+Matches: Coventry University
+801-1000 Edinburgh Napier University
+Matches: Edinburgh Napier University
+398 Goldsmiths, University of London
+Matches: Goldsmiths, University of London
+155 Hanyang University
+Matches: Hanyang University
+8 Imperial College London
+Matches: Imperial College London
+601-650 Keele University
+Matches: Keele University
+23 King's College London
+Matches: King's College London
+135 Lancaster University
+Matches: Lancaster University
+701-750 London Metropolitan University
+Matches: London Metropolitan University
+801-1000 London South Bank University
+Matches: London South Bank University
+234 Loughborough University
+Matches: Loughborough University
+801-1000 Manchester Metropolitan University
+Matches: Manchester Metropolitan University
+701-750 Middlesex University
+Matches: Middlesex University
+801-1000 Nottingham Trent University
+Matches: Nottingham Trent University
+361 Oxford Brookes University
+Matches: Oxford Brookes University
+127 Queen Mary, University of London
+Matches: Queen Mary University of London
+202 Queen's University Belfast
+Matches: Queen’s University Belfast
+801-1000 Robert Gordon University
+Matches: Robert Gordon University
+259 Royal Holloway University of London
+Matches: Royal Holloway University of London
+296 SOAS University of London
+Matches: SOAS University of London
+431-440 Swansea University
+Matches: Swansea University
+57 The University of Warwick
+Matches: The University of Warwick
+601-650 Ulster University
+Matches: Ulster University
+551-600 Universidade Federal de Minas Gerais
+Matches: Universidade Federal de Minas Gerais
+158 University of Aberdeen
+Matches: University of Aberdeen
+160 University of Bath
+Matches: University of Bath
+84 University of Birmingham
+Matches: University of Birmingham
+601-650 University of Bradford
+Matches: University of Bradford
+701-750 University of Brighton
+Matches: University of Brighton
+44 University of Bristo
+Matches: University of Bristol
+44 University of Bristol
+Matches: University of Bristol
+5 University of Cambridge
+Matches: University of Cambridge
+801-1000 University of Central Lancashire
+Matches: University of Central Lancashire
+267 University of Dundee
+Matches: University of Dundee
+274 University of East Anglia
+Matches: University of East Anglia
+801-1000 University of East London
+Matches: University of East London
+347 University of Essex
+Matches: University of Essex
+65 University of Glasgow
+Matches: University of Glasgow
+801-1000 University of Greenwich
+Matches: University of Greenwich
+751-800 University of Hertfordshire
+Matches: University of Hertfordshire
+751-800 University of Huddersfield
+Matches: University of Huddersfield
+601-650 University of Hull
+Matches: University of Hull
+373 University of Kent
+Matches: University of Kent
+101 University of Leeds
+Matches: University of Leeds
+238 University of Leicester
+Matches: University of Leicester
+173 University of Liverpool
+Matches: University of Liverpool
+751-800 University of Lorraine
+Matches: University of Lorraine
+21 University of Michigan
+Matches: University of Michigan
+84 University of Nottingham
+Matches: University of Nottingham
+6 University of Oxford
+Matches: University of Oxford
+601-650 University of Portsmouth
+Matches: University of Portsmouth
+188 University of Reading
+Matches: University of Reading
+751-800 University of Salford
+Matches: University of Salford
+102 University of Southampton
+Matches: University of Southampton
+92 University of St Andrews
+Matches: University of St Andrews
+401-410 University of Stirling
+Matches: University of Stirling
+277 University of Strathclyde
+Matches: University of Strathclyde
+264 University of Surrey
+Matches: University of Surrey
+228 University of Sussex
+Matches: University of Sussex
+551-600 University of Westminster
+Matches: University of Westminster
+135 University of York
+Matches: University of York
+209 Aizona State University
+Matches: Arizona State University
+471-480 American University
+Matches: American University
+209 Arizona Sate University
+Matches: Arizona State University
+209 Arizona State University
+Matches: Arizona State University
+801-1000 Auburn University
+Matches: Auburn University
+801-1000 Baylor University
+Matches: Baylor University
+801-1000 Baylor University
+
+Matches: Baylor University
+339 Boston College
+Matches: Boston College
+81 Boston University
+Matches: Boston University
+411-420 Brandeis University
+Matches: Brandeis University
+751-800 Brigham Young University
+Matches: Brigham Young University
+53 Brown University
+Matches: Brown University
+4 Calfornia Institute of Technology
+Matches: California Institute of Technology
+4 California Institute of Technology
+Matches: California Institute of Technology
+47 Cargnegie Mellon University
+Matches: Carnegie Mellon University
+47 Carnegie Mellon University
+Matches: Carnegie Mellon University
+213 Case Western Reserve University
+Matches: Case Western Reserve University
+501-550 City University of New York
+Matches: City University of New York
+501-550 Clark University
+Matches: Clark University
+651-700 Clarkson University
+Matches: Clarkson University
+701-750 Clemson University
+Matches: Clemson University
+481-490 Colorado State University
+Matches: Colorado State University
+18 Columbia University
+Matches: Columbia University
+18 Columbia University
+
+Matches: Columbia University
+431-440 Concordia University
+Matches: Concordia University
+14 Cornell University
+Matches: Cornell University
+169 Dartmouth College
+Matches: Dartmouth College
+501-550 Drexel University
+Matches: Drexel University
+21 Duke University
+Matches: Duke University
+59 Ecole Polytechnique
+Matches: Ecole Polytechnique
+147 Emory University
+Matches: Emory University
+751-800 Flordia International University
+Matches: Florida International University
+751-800 Florida International University
+Matches: Florida International University
+431-440 Florida State University
+Matches: Florida State University
+801-1000 Fordham University
+Matches: Fordham University
+70 Geogia Institute of Technology
+Matches: Georgia Institute of Technology
+352 George Washington University
+Matches: George Washington University
+227 Georgetown University
+Matches: Georgetown University
+70 Georgia Institute of Technology
+Matches: Georgia Institute of Technology
+751-800 Georgia State University
+Matches: Georgia State University
+70 Georgian Institute of Technology
+Matches: Georgia Institute of Technology
+3 Harvard University
+Matches: Harvard University
+551-600 Howard University
+Matches: Howard University
+395 Illinois Institute of Technology
+Matches: Illinois Institute of Technology
+395 Illinos Institute of Technology
+Matches: Illinois Institute of Technology
+601-650 Indiana University-Purdue University Indianapolis
+Matches: Indiana University–Purdue University Indianapolis
+471-480 Iowa State University
+Matches: Iowa State University
+17 Johns Hopkins University
+Matches: Johns Hopkins University
+551-600 Jordan University of Science and Technology
+Matches: Iran University of Science and Technology
+751-800 Kansas State University
+Matches: Kansas State University
+801-1000 Kyushu Institute of Technology
+Matches: Kyushu Institute of Technology
+501-550 Lehigh University
+Matches: Lehigh University
+319 Lincoln University
+Matches: Lincoln University
+651-700 Louisiana State University
+Matches: Louisiana State University
+801-1000 Marquette University
+Matches: Marquette University
+1 Massachusetts Institute of Technology
+Matches: Massachusetts Institute of Technology
+1 Massachustmnetts Institute of Technology
+Matches: Massachusetts Institute of Technology
+1 Massuchusetts Institute of Technology
+Matches: Massachusetts Institute of Technology
+801-1000 Miami University
+Matches: Miami University
+149 Michgan State University
+Matches: Michigan State University
+149 Michigan State University
+Matches: Michigan State University
+551-600 Michigan Technological University
+Matches: Michigan Technological University
+651-700 Missouri University of Science and Technology
+Matches: Missouri University of Science and Technology
+801-1000 New Jersery Institute of Technology
+Matches: New Jersey Institute of Technology
+801-1000 New Jersey Institute of Technology
+Matches: New Jersey Institute of Technology
+52 New York University
+Matches: New York University
+263 North Carolina State University
+Matches: North Carolina State University
+346 Northeasetrn University
+Matches: Northeastern University
+28 Northeastern University
+Matches: Northwestern University
+28 Northwestern University
+Matches: Northwestern University
+801-1000 Ohio University
+Matches: Ohio University
+441-450 Oregon State University
+Matches: Oregon State University
+801-1000 PLA University of Science and Technology
+Matches: AGH University of Science and Technology
+93 Pennsylvania State University
+Matches: Pennsylvania State University
+13 Princcton University
+Matches: Princeton University
+13 Princeton University
+Matches: Princeton University
+105 Purdue University
+Matches: Purdue University
+89 Rice University
+Matches: Rice University
+801-1000 Ryerson University
+Matches: Ryerson University
+801-1000 San Diego State University
+Matches: San Diego State University
+701-750 Smith College
+Matches: Smith College
+501-550 Southeast University
+Matches: Southeast University
+701-750 Southern Methodist University
+Matches: Southern Methodist University
+2 Stanford University
+Matches: Stanford University
+651-700 Stevens Institute of Technology
+Matches: Stevens Institute of Technology
+501-550 Syracuse University
+Matches: Syracuse University
+651-700 Temple University
+Matches: Temple University
+421-430 The University of Georgia
+Matches: The University of Georgia
+471-480 Tianjin University
+Matches: Tianjin University
+243 Tufts University
+Matches: Tufts University
+451-460 Tulane University
+Matches: Tulane University
+651-700 University of Alabama
+Matches: University of Alabama
+27 University of California, Berkeley
+Matches: University of California, Berkeley
+118 University of California, Davis
+Matches: University of California, Davis
+164 University of California, Irvine
+Matches: University of California, Irvine
+33 University of California, Los Angeles
+Matches: University of California, Los Angeles
+323 University of California, Riverside
+Matches: University of California, Riverside
+38 University of California, San Diego
+Matches: University of California, San Diego
+134 University of California, Santa Barbara
+Matches: University of California, Santa Barbara
+301 University of California, Santa Cruz
+Matches: University of California, Santa Cruz
+701-750 University of Central Florida
+Matches: University of Central Florida
+9 University of Chicago
+Matches: University of Chicago
+501-550 University of Cincinnati
+Matches: University of Cincinnati
+182 University of Colaorado Boulder
+Matches: University of Colorado Boulder
+182 University of Colorado at Boulder
+Matches: University of Colorado Boulder
+421-430 University of Connecticut
+Matches: University of Connecticut
+421-430 University of Delaware
+Matches: University of Delaware
+701-750 University of Denver
+Matches: University of Denver
+178 University of Florida
+Matches: University of Florida
+601-650 University of Haifa
+Matches: University of Haifa
+601-650 University of Houston
+Matches: University of Houston
+207 University of Illinois at Chicago
+Matches: University of Illinois at Chicago
+69 University of Illinois at Urbana-Champaign
+Matches: University of Illinois at Urbana-Champaign
+421-430 University of Iowa
+Matches: University of Iowa
+386 University of Kansas
+Matches: University of Kansas
+551-600 University of Kentucky
+Matches: University of Kentucky
+305 University of Lisbon
+Matches: University of Lisbon
+651-700 University of Ljubljana
+Matches: University of Ljubljana
+249 University of Massachusetts Amherst
+Matches: University of Massachusetts Amherst
+601-650 University of Massachusetts Boston
+Matches: University of Massachusetts Boston
+252 University of Miami
+Matches: University of Miami
+21 University of Michigan
+Matches: University of Michigan
+21 University of Michingan
+Matches: University of Michigan
+163 University of Minnesota
+Matches: University of Minnesota
+163 University of Minnesotay
+Matches: University of Minnesota
+801-1000 University of Mississippi
+Matches: University of Mississippi
+601-650 University of Missouri-Columbia
+Matches: University of Missouri, Columbia
+501-550 University of Nebraska - Lincoln
+Matches: University of Nebraska-Lincoln
+461-470 University of New Mexico
+Matches: University of New Mexico
+216 University of Norte Dame
+Matches: University of Notre Dame
+216 University of Notre Dame
+Matches: University of Notre Dame
+501-550 University of Oklahoma
+Matches: University of Oklahoma
+551-600 University of Oregon
+Matches: University of Oregon
+19 University of Pennsylvania
+Matches: University of Pennsylvania
+142 University of Pittsbrugh
+Matches: University of Pittsburgh
+142 University of Pittsburgh
+Matches: University of Pittsburgh
+186 University of Rochester
+Matches: University of Rochester
+801-1000 University of San Diego
+Matches: University of San Diego
+801-1000 University of San Francisco
+Matches: University of San Francisco
+601-650 University of South Carolina
+Matches: University of South Carolina
+501-550 University of South Florida
+Matches: University of South Florida
+132 University of Southern California
+Matches: University of Southern California
+67 University of Texas at Austin
+Matches: University of Texas at Austin
+751-800 University of Tulsa
+Matches: University of Tulsa
+391 University of Utah
+Matches: University of Utah
+551-600 University of Vermont
+Matches: University of Vermont
+173 University of Virginia
+Matches: University of Virginia
+292 University of Waikato
+Matches: University of Waikato
+61 University of Washington
+Matches: University of Washington
+61 University of Washingtong
+Matches: University of Washington
+61 University of Wasington
+Matches: University of Washington
+55 University of Wisconsin Madison
+Matches: University of Wisconsin-Madison
+701-750 University of Wyoming
+Matches: University of Wyoming
+801-1000 Utah State University
+Matches: Utah State University
+212 Vanderbilt University
+Matches: Vanderbilt University
+651-700 Virginia Commonwealth University
+Matches: Virginia Commonwealth University
+367 Virginia Polytechnic Institute and State University
+Matches: Virginia Polytechnic Institute and State University
+411-420 Wake Forest University
+Matches: Wake Forest University
+401-410 Washington State University
+Matches: Washington State University
+100 Washington University in St. Louis
+Matches: Washington University in St. Louis
+461-470 Wayne State University
+Matches: Wayne State University
+431-440 Xiamen University
+Matches: Xiamen University
+16 Yale University
+Matches: Yale University
+441-450 York University
+Matches: York University
+701-750 Universidad de la Republica
+Matches: Universidad de la República
+651-700 Universidad Central de Venezuela
+Matches: Universidad Central de Venezuela
+751-800 Universidad Simón Bolívar
+Matches: Universidad Simón Bolívar

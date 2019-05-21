@@ -14,6 +14,7 @@ def get_html(url):
 
 
 def read_page(web_url, n):
+    # Reads in all pages from the scholar top, saves all computer science ones.
     n = n-1
     if n >= 0:
         s = get_html(web_url)

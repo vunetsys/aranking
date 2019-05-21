@@ -6,6 +6,8 @@ link_base_dblp = "https://dblp.org/search/venue/api?q="
 DSN = "host='localhost' dbname='academicrankings' user='lucasfaijdherbe'"
 tcp = ThreadedConnectionPool(1, 18, DSN)
 
+# Threaded version of the db class
+
 
 class ThreadDb:
     def __init__(self):
@@ -49,7 +51,6 @@ class ThreadDb:
             print("Added author: " + first_name + " " + last_name)
         except psycopg2.IntegrityError:
             self.conn.rollback()
-            #print("Author:" + first_name + " " + last_name + " already exists! Try again.")
 
     def add_author_paper(self, author_id, paper_id):
         try:

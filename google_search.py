@@ -1,8 +1,10 @@
 from googleapiclient.discovery import build
-import pprint
 
 my_api_key = ""
 my_cse_id = "005296326583044659583:xsrnrd7nqiw"
+
+# Input: search term
+# Will return a list of found items through the Google Search API
 
 
 def google_search(search_term, api_key=my_api_key, cse_id=my_cse_id, **kwargs):

@@ -1,7 +1,6 @@
-import json
-import requests
 from thread_database import ThreadDb
 import threading
+from general import get_json
 
 filename = "docs/no_result_papers.txt"
 global_lock = threading.Lock()
@@ -22,13 +21,8 @@ def write_no_result(paper_id):
     global_lock.release()
 
 
-def get_json(url):
-    page = requests.get(url)
-    text = page.text
-    return json.loads(text)
-
-
 def parse_paper(paper_title):
+    # Takes out all signs not allowed by scopus search api
     paper_title = paper_title.replace("(", "")
     paper_title = paper_title.replace(")", "")
     paper_title = paper_title.replace("%", "")
@@ -50,7 +44,7 @@ def get_authors(load, paper_id, database):
     try:
         authors = load['abstracts-retrieval-response']['authors']['author']
     except TypeError:
-        print("Typerror")
+        print("Type error")
         write_no_result(paper_id)
         database.put_connection()
         return False

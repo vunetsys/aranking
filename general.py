@@ -1,7 +1,14 @@
 import requests
+import json
 from bs4 import BeautifulSoup
 from difflib import SequenceMatcher
 from time import sleep
+
+
+def get_json(url):
+    page = requests.get(url)
+    text = page.text
+    return json.loads(text)
 
 
 def get_html(url):

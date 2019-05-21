@@ -1,4 +1,5 @@
 import psycopg2 as p
+from general import similar
 
 # TABLE CREATION
 
@@ -22,10 +23,18 @@ import psycopg2 as p
 # c.execute('''CREATE TABLE authors_papers (author_id INTEGER NOT NULL, paper_id INTEGER NOT NULL,
 # PRIMARY KEY(author_id, paper_id), FOREIGN KEY(author_id) REFERENCES authors(id),
 # FOREIGN KEY(paper_id) REFERENCES papers(id))''')
+#
+# c.execute('''CREATE TABLE ranking_lists (id INTEGER PRIMARY KEY, name text UNIQUE, qs_rank text, the_rank text,
+# shanghai_rank text)''')
+#
+# db.c.execute('''CREATE TABLE ranked_affiliations (id INTEGER PRIMARY KEY UNIQUE, affiliation text UNIQUE,
+# location text, ranking INTEGER)''')
 
 # NOT USED
 # c.execute('''CREATE TABLE journals (id INTEGER PRIMARY KEY AUTOINCREMENT, name text, url text UNIQUE,
 # year text, volume text UNIQUE, venue_id INTEGER, FOREIGN KEY(venue_id) REFERENCES venues(id)) ''')
+
+
 
 
 def remove_duplicate_affiliations():
@@ -50,6 +59,34 @@ def remove_duplicate_affiliations():
             c.execute("UPDATE authors SET affiliation_id=%s WHERE affiliation_id=%s", (new_id, old_id))
             c.execute("DELETE FROM affiliations where id=%s", (old_id,))
             conn.commit()
+
+    c.execute("SELECT DISTINCT country from affiliations")
+    countries = c.fetchall()
+
+    count = 0
+    for country in countries:
+        # print(country[0])
+        c.execute("SELECT * FROM affiliations WHERE country=%s ORDER BY affiliation ASC", (country[0],))
+        affiliations = c.fetchall()
+        if len(affiliations) > 1:
+            for aff in affiliations:
+                current_id = aff[0]
+                current_affiliation = aff[1]
+                # print(current_affiliation)
+                for other_aff in affiliations:
+                    other_id = other_aff[0]
+                    other_affiliation = other_aff[1]
+                    if similar(other_affiliation, current_affiliation) >= 0.95 and current_id != other_id:
+                        # print(current_affiliation + " matches: " + other_affiliation[1])
+                        c.execute("UPDATE authors SET affiliation_id=%s WHERE affiliation_id=%s",
+                                     (current_id, other_id))
+                        c.execute("DELETE FROM affiliations where id=%s", (other_id,))
+                        conn.commit()
+                        affiliations.remove(other_aff)
+                        count += 1
+                        print(
+                            "DELETED AFFILIATION: " + other_affiliation + " AND REPLACED WITH: " + current_affiliation)
+    print(count)
 
 
 class Database:
@@ -124,6 +161,19 @@ class Database:
         self.c.execute("SELECT id, affiliation, country from affiliations")
         return self.c.fetchall()
 
+    def get_universities(self):
+        self.c.execute("select * from affiliations where affiliation like '%University%' OR affiliation like "
+                       "'%Universidad%' or affiliation like '%Université%' or affiliation like '%Universiteti%' "
+                       "or affiliation like '%Universiti%' or affiliation like'%College%' or affiliation like "
+                       "'%Universitaria%' or affiliation like '%Academy%' or affiliation like '%Faculty%' or "
+                       "affiliation like '%Universidade%' or affiliation like '%Instituto%' or affiliation like "
+                       "'%Universität%' or affiliation like '%Universitat%' or affiliation like '%Universitatea%' "
+                       "or affiliation like '%Universitetas%' or affiliation like '%Univeristà%' or affiliation like "
+                       "'%Egyetem%' or affiliation like '%Ecole%' or affiliation like '%Univerzita%' or affiliation "
+                       "like '%Universiteti%' or affiliation like '%Institute of Technology%' or affiliation like "
+                       "'%Üniversitesi%' order by country, affiliation asc")
+        return self.c.fetchall()
+
     # def add_journal_entry(self, name, url, year, journal_id):
     #     try:
     #         self.c.execute("INSERT INTO journals(name, url, year, venue_id) VALUES (?,?,?,?)", (name, url, year,
@@ -136,4 +186,9 @@ class Database:
     #     self.c.execute("SELECT url, id FROM venues WHERE type='Journal' and id > 177")
     #     return self.c.fetchall()
 
-remove_duplicate_affiliations()
+#
+
+
+# db = Database()
+# db.c.execute("ALTER TABLE ranked_affiliations ALTER COLUMN ranking TYPE float8")
+# db.conn.commit()
