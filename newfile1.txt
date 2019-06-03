@@ -1,0 +1,24 @@
+University of Bristol    0.87212449255751
+Abai Kazakh National Pedagogical University    0.011022302462516
+Saint Joseph University of Beirut    0.011022302462516
+University of Delhi    0.020297699594046
+King Khalid University    0.0405953991880921
+Sultan Qaboos University    0.081190798376184
+Stockholm School of Economics    0.0913396481732071
+JSS Academy of Higher Education and Research    0.0913396481732071
+Kent State University    0.0913396481732071
+University of Texas Medical Branch at Galveston    0.0913396481732071
+Semmelweis University    0.0913396481732071
+Thomas Jefferson University    0.0913396481732071
+Arabian Gulf University    0.162381596752368
+Kazakh National Research Technical University after K.I. Satbayev    0.162381596752368
+Taras Shevchenko National University of Kyiv    0.162381596752368
+Rush University    0.16745602165088
+Gadjah Mada University    0.182679296346414
+Universidad Externado de Colombia    0.182679296346414
+Hofstra University    0.243572395128552
+Moscow State Institute of International Relations    0.247631935047361
+Pontificia Universidad Católica Argentina    0.265899864682003
+Universidad de Belgrano    0.320703653585927
+L.N. Gumilyov Eurasian National University    0.322733423545332
+St George's Hospital Medical School    0.546008119079838

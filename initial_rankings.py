@@ -47,12 +47,16 @@ def give_initial_ranking():
 
         score = calculate_ranking_score(str(qs_rank), str(the_rank), str(shanghai_rank))
 
+        # db.c.execute("UPDATE ranking_lists SET raw_score=%s WHERE name=%s", (score, university_name))
+        # db.conn.commit()
+
         university_list.append(university_name)
         score_list.append(score)
 
     score_array = np.asarray(score_list)
-    scoring = 1 - ((preprocessing.normalize(score_array[:, np.newaxis], axis=0).ravel()) * 10)
+    scoring = 1 - (preprocessing.minmax_scale(score_array[:, np.newaxis], axis=0).ravel())
     add_to_database(scoring)
+    find_match()
 
 
 def calculate_ranking_score(qs, the, shanghai):
@@ -67,7 +71,16 @@ def calculate_ranking_score(qs, the, shanghai):
     if "-" in shanghai:
         shanghai = calculate_average(shanghai)
 
-    return int(qs) + int(the) + int(shanghai)
+    num_rankings = 3
+
+    if int(qs) == 0:
+        num_rankings -= 1
+    if int(the) == 0:
+        num_rankings -= 1
+    if int(shanghai) == 0:
+        num_rankings -= 1
+
+    return (int(qs) + int(the) + int(shanghai)) / num_rankings
 
 
 def calculate_average(ranking):
@@ -77,38 +90,114 @@ def calculate_average(ranking):
 
 
 def add_to_database(scoring):
-    found = 0
     for university, score in zip(university_list, scoring):
-        # print(university, score)
+
+        db.c.execute("UPDATE ranking_lists SET normalized_score=%s WHERE name=%s", (score, university))
+        db.conn.commit()
+
+
+def find_match():
+    db.c.execute("SELECT name, normalized_score FROM ranking_lists ORDER BY normalized_score DESC")
+    score_list = db.c.fetchall()
+    found = 0
+    has_match = 0
+
+    for entry in score_list:
+        has_match = 0
+        university = entry[0]
+        score = entry[1]
         for uni in universities:
             found_universities = []
-            if similar(uni[1], university) >= 0.85:
-                # print(university)
-                # print("Found: " + str(uni))
+            if similar(uni[1], university) > 0.95:
+                print(university)
+                print("Found: " + str(uni))
                 found += 1
-                if similar(uni[1], university) == 1:
-                    # db.c.execute("UPDATE ranked_affiliations SET ranking=%s WHERE affiliation=%s", (score, university))
-                    # db.conn.commit()
-                    break
-                elif 0.85 <= similar(uni[1], university) < 1:
-                    user_decision = input("Are " + uni[1] + " and " + university + " the same?")
-                    if user_decision == "1":
-                        db.c.execute("UPDATE ranked_affiliations SET ranking=%s WHERE affiliation=%s",
-                                     (score, university))
-                        db.conn.commit()
-                        print("Added " + university + "!")
-                        break
-                    else:
-                        print("Continuing to next.")
-                        with open("ranked_universities.txt", 'a') as f:
-                            f.write(uni[1] + " " + str(score) + "\n")
-                        f.close()
-            else:
-                with open("ranked_universities.txt", 'a') as f:
-                    f.write(uni[1] + " " + str(score) + "\n")
-                f.close()
+                # db.c.execute("UPDATE ranked_affiliations SET ranking=%s WHERE affiliation=%s", (score, university))
+                # db.conn.commit()
+                has_match = 1
+                break
 
-    print(found)
+                # elif 0.85 <= similar(uni[1], university) < 1:
+                #     user_decision = input("Are " + uni[1] + " and " + university + " the same?")
+                # if user_decision == "1":
+                #     db.c.execute("UPDATE ranked_affiliations SET ranking=%s WHERE affiliation=%s",
+                #                  (score, university))
+                #     db.conn.commit()
+                #     print("Added " + university + "!")
+                #     break
+                # else:
+                #     print("Continuing to next.")
+                #     with open("ranked_universities.txt", 'a') as f:
+                #         f.write(uni[1] + " " + str(score) + "\n")
+                #     f.close()
+
+        if has_match == 0:
+            with open("ranked_universities.txt", 'a') as f:
+                f.write(university + " " + str(score) + "\n")
+            f.close()
+
+        print(found)
 
 
-give_initial_ranking()
+
+# db.c.execute("SELECT name, normalized_score FROM ranking_lists order by normalized_score, name ASC")
+# rankings = db.c.fetchall()
+#
+# with open("newfile1.txt", 'a') as f:
+#     for r in rankings:
+#         name = r[0]
+#         rank = r[1]
+#         f.write(name + "    " + str(rank) + "\n")
+#     f.close()
+#
+
+
+# find_match()
+# db.c.execute("SELECT * FROM affiliations")
+# affiliations = db.c.fetchall()
+#
+#
+# with open('ranked_universities.txt', 'r') as f:
+#     for line in f:
+#         match = 0
+#         name = " ".join(line.split()[:-1])
+#         rank = line.split()[-1]
+#         for affiliation in affiliations:
+#             name_aff = affiliation[1]
+#             if similar(name_aff, name) >= 0.95:
+#                 match = 1
+#                 # print(name_aff)
+#                 # id = affiliation[0]
+#                 # location = affiliation[2]
+#                 # try:
+#                 #     db.c.execute("INSERT INTO ranked_affiliations (id, affiliation, location, ranking) "
+#                 #                  "VALUES (%s, %s, %s, %s)", (id, name_aff, location, rank))
+#                 #     db.conn.commit()
+#                 # except p.IntegrityError:
+#                 #     db.conn.rollback()
+#                 #     db.c.execute("UPDATE ranked_affiliations set ranking=%s WHERE id=%s", (rank, id))
+#                 #     db.conn.commit()
+#                 # break
+#             elif 0.85 < similar(name_aff, name) < 0.95:
+#                 user_input = input(name_aff + " and " + name + " the same?")
+#                 if user_input == str(1):
+#                     print('YES!')
+#                     match = 1
+#                     id = affiliation[0]
+#                     location = affiliation[2]
+#                     try:
+#                         db.c.execute("INSERT INTO ranked_affiliations (id, affiliation, location, ranking) "
+#                                      "VALUES (%s, %s, %s, %s)", (id, name_aff, location, rank))
+#                         db.conn.commit()
+#                     except p.IntegrityError:
+#                         db.conn.rollback()
+#                         db.c.execute("UPDATE ranked_affiliations set ranking=%s WHERE id=%s", (rank, id))
+#                         db.conn.commit()
+#                     break
+#                 else:
+#                     continue
+#
+#
+#
+#
+#
