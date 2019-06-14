@@ -14,8 +14,8 @@ paper_queue = Queue()
 
 file_contents = []
 # filename = "crawled_conferences.txt"
-filename = "docs/crawled_papers.txt"
-filename2 = "docs/no_result_papers.txt"
+filename = "data/crawled_papers.txt"
+filename2 = "data/no_result_papers.txt"
 
 num_thread_author = 0
 num_thread_aff = 0
@@ -92,20 +92,28 @@ def main():
     # papers = db.get_papers()
     # db.close_db()
 
-    with open(filename2) as f2:
-        for paper_id in f2:
-            if int(paper_id) > 85870:
-                db.c.execute("SELECT title FROM papers where id=%s", (paper_id,))
-                title = db.c.fetchone()
-                paper = [int(paper_id), title[0]]
-                # print(paper)
-                create_jobs(paper, paper_queue)
+    db.c.execute("SELECT id, title FROM papers WHERE id >= 276139")
+    papers = db.c.fetchall()
 
+    for paper in papers:
+        create_jobs(paper, paper_queue)
+
+    create_crawlers(get_affiliations())
+
+    # with open(filename2) as f2:
+    #     for paper_id in f2:
+    #         if int(paper_id) > 85870:
+    #             db.c.execute("SELECT title FROM papers where id=%s", (paper_id,))
+    #             title = db.c.fetchone()
+    #             paper = [int(paper_id), title[0]]
+    #             # print(paper)
+    #             create_jobs(paper, paper_queue)
+    #
     #     if str(id) in no_result:
     #         create_jobs(paper, paper_queue)
-    create_crawlers(get_affiliations)
-    add_initial_universities()
-    give_initial_ranking()
+    # create_crawlers(get_affiliations)
+    # add_initial_universities()
+    # give_initial_ranking()
 
 
 if __name__ == '__main__':

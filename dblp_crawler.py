@@ -63,9 +63,10 @@ def get_conferences():
     venues = db.get_venues()
 
     for v in venues:
-        venue_id = v[1]
-        url = v[0]
+        venue_id = v[0]
+        url = v[1]
         print(venue_id)
+        print(url)
         s = get_html(url)
         titles = s.findAll("span", {"class": "title"})
         contents = s.findAll("a", {"class": "toc-link"})
@@ -76,7 +77,7 @@ def get_conferences():
             regex = re.compile(r'^(.*?(201[4-9])[^$]*)$')
 
             if regex.match(conference):
-                print(conference)
+                # print(conference)
                 search = re.search(r'\d{4}', conference)
                 year = search.group()
                 db.add_conference_entry(conference, url, year, venue_id)
@@ -89,7 +90,7 @@ def get_yearly_conferences(conf_id):
 def get_papers(conference):
     # Gets all paper titles through dblp
     database = ThreadDb()
-
+    print(conference)
     url = conference[0]
     conference_id = conference[1]
     conf_id = str(conference_id)
@@ -104,5 +105,79 @@ def get_papers(conference):
             title = d.find("span", {"class": "title"})
 
             paper_title = title.text.replace(".", "")
-
+            print(paper_title)
             database.add_paper(paper_title, conference_id)
+    database.put_connection()
+
+
+# def check_author(author_id):
+#     db.c.execute("SELECT * FROM authors WHERE user_id=%s", (author_id,))
+#     author = db.c.fetchone()
+#     user_id = author[0]
+#     first_name = author[1]
+#     last_name = author[2]
+#     url = author[3]
+#     aff_id = author[4]
+#     print(user_id, first_name, last_name, url, aff_id)
+#     check_affiliation(aff_id)
+#
+#     try:
+#         c.execute("INSERT INTO authors (user_id, first_name, last_name, url, affiliation_id) "
+#                   "VALUES (%s, %s, %s, %s, %s)", (user_id, first_name, last_name, url, aff_id))
+#         conn.commit()
+#         print("Added to db!")
+#     except p.IntegrityError:
+#         conn.rollback()
+#         print("Author already exists!")
+#
+#
+# def check_affiliation(aff_id):
+#     db.c.execute("SELECT * FROM affiliations WHERE id=%s", (aff_id,))
+#     aff = db.c.fetchone()
+#     id = aff[0]
+#     name = aff[1]
+#     country = aff[2]
+#     print(id, name, country)
+#
+#     try:
+#         c.execute("INSERT INTO affiliations (id, affiliation, country) VALUES (%s, %s, %s)", (id, name, country))
+#         conn.commit()
+#         print("Added aff to db!")
+#     except p.IntegrityError:
+#         conn.rollback()
+#         print("Affiliation already exists!")
+#
+#
+# db.c.execute("SELECT * FROM CONFERENCES WHERE id > 1737")
+# conferences = db.c.fetchall()
+#
+# for conference in conferences:
+#     conf_id = conference[0]
+#     name = conference[1]
+#     url = conference[2]
+#     year = conference[3]
+#     venue_id = conference[4]
+#
+#     c.execute("INSERT INTO conferences (id, name, url, year, venue_id) VALUES (%s, %s, %s, %s, %s)",
+#               (conf_id, name, url, year, venue_id))
+#     conn.commit()
+#
+#
+# db.c.execute("SELECT * FROM PAPERS WHERE conference_id > 1737")
+# papers = db.c.fetchall()
+#
+# for paper in papers:
+#     paper_id = paper[0]
+#     title = paper[1]
+#     conference_id = paper[2]
+#     db.c.execute("SELECT * FROM authors_papers WHERE paper_id=%s", (paper_id,))
+#     author_ids = db.c.fetchall()
+#
+#     c.execute("INSERT INTO papers (id, title, conference_id) VALUES (%s, %s, %s)", (paper_id, title, conference_id))
+#     conn.commit()
+#
+#     for ids in author_ids:
+#         aut_id = ids[0]
+#         check_author(aut_id)
+#         c.execute("INSERT INTO authors_papers (author_id, paper_id) VALUES (%s, %s)", (aut_id, paper_id))
+#         conn.commit()

@@ -83,7 +83,7 @@ def get_authors(load, paper_id, database):
     return True
 
 
-def get_affiliations(affiliation_url, database):
+def get_affiliations(affiliation_url, paper_id, database):
     load = get_json(affiliation_url)
 
     try:
@@ -103,7 +103,7 @@ def get_affiliations(affiliation_url, database):
     except KeyError:
         print("No affiliation found")
         pass
-    return 0
+    return get_authors(load, paper_id, database)
 
 
 def get_affiliation_url(result):
@@ -129,8 +129,8 @@ def process_paper(paper_title, paper_id):
 
         if str(number_of_results) > "0":
             affiliation_url = get_affiliation_url(result)
-            get_affiliations(affiliation_url, database)
-            return get_authors(load, paper_id, database)
+            return get_affiliations(affiliation_url, paper_id, database)
+
         else:
             print("No results found!")
             write_no_result(paper_id)

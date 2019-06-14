@@ -1,5 +1,5 @@
-import psycopg2 as p
 from general import similar
+import psycopg2 as p
 
 # TABLE CREATION
 
@@ -35,10 +35,8 @@ from general import similar
 # year text, volume text UNIQUE, venue_id INTEGER, FOREIGN KEY(venue_id) REFERENCES venues(id)) ''')
 
 
-
-
 def remove_duplicate_affiliations():
-    conn = p.connect(database='academicrankings', user='lucasfaijdherbe')
+    conn = p.connect(database='academicrankings', user='lucas')
     c = conn.cursor()
 
     c.execute("select affiliation, country from affiliations group by affiliation, "
@@ -92,7 +90,7 @@ def remove_duplicate_affiliations():
 class Database:
 
     def __init__(self):
-        self.conn = p.connect(database='academicrankings', user='lucasfaijdherbe')
+        self.conn = p.connect(database='rankedcategories', user='lucas')
         self.c = self.conn.cursor()
         # self.conn = sqlite3.connect('rankings.db', timeout=20, check_same_thread=False)
         # self.c = self.conn.cursor()
@@ -120,8 +118,13 @@ class Database:
 
     def add_conference_entry(self, name, url, year, venue_id):
         try:
-            self.c.execute("INSERT INTO conferences(name,url, year, venue_id) VALUES (%s,%s,%s,%s)", (name, url, year,
-                                                                                                      venue_id))
+            print(name)
+            print(url)
+            print(year)
+            print(venue_id)
+            self.conn.rollback()
+            self.c.execute("INSERT INTO conferences(name, url, year, venue_id) VALUES (%s,%s,%s,%s)", (name, url, year,
+                                                                                                       venue_id))
             self.conn.commit()
         except p.IntegrityError:
             print("Value " + url + " for: " + name + " already exists! Try again.")
@@ -189,6 +192,51 @@ class Database:
 #
 
 
-# db = Database()
+db = Database()
+
 # db.c.execute("ALTER TABLE ranked_affiliations ALTER COLUMN ranking TYPE float8")
 # db.conn.commit()
+# db.c.execute("SELECT id FROM conferences ORDER BY ID ASC")
+# conference_ids = db.c.fetchall()
+#
+# with open("test.txt", 'a') as f:
+#     for id in conference_ids:
+#         paper_count = 0
+#         total_paper_count = 0
+#
+#         print("CONF: " + str(id))
+#         db.c.execute("SELECT id FROM papers WHERE conference_id=%s ORDER BY ID ASC", (id,))
+#         paper_ids = db.c.fetchall()
+#         for pid in paper_ids:
+#             db.c.execute("SELECT 1 FROM authors_papers WHERE paper_id=%s", (pid,))
+#             if db.c.fetchall():
+#                 paper_count += 1
+#             total_paper_count += 1
+#         percentage = (paper_count / total_paper_count) * 100
+#         if percentage < 85:
+#             print("Number of present papers: " + str(percentage) + "%")
+#             f.write("Conference: " + str(id[0]) + " papers: " + str(percentage) + "%\n")
+#
+# f.close()
+#
+#
+# venues = []
+#
+# with open('test.txt', 'r') as f:
+#     for line in f:
+#         conf_id = line.split()[1]
+#         percentage = line.split()[3]
+#         percentage = percentage[:-1]
+#         if float(percentage) <= 20.0:
+#             print(conf_id)
+#             db.c.execute("DELETE FROM authors_papers WHERE paper_id IN (SELECT id from papers WHERE conference_id=%s)",
+#                          (conf_id,))
+#             db.conn.commit()
+#             db.c.execute("DELETE FROM papers WHERE conference_id=%s", (conf_id,))
+#             db.conn.commit()
+#             db.c.execute("DELETE FROM conferences WHERE id=%s", (conf_id,))
+#             db.conn.commit()
+# f.close()
+#
+# # print(venues)
+# # print(len(venues))

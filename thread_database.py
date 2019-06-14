@@ -48,9 +48,10 @@ class ThreadDb:
             self.c.execute('''INSERT INTO authors(user_id, first_name, last_name, url, affiliation_id)
                            VALUES (%s,%s,%s,%s,%s)''', (user_id, first_name, last_name, url, aff_id))
             self.conn.commit()
-            print("Added author: " + first_name + " " + last_name)
+            # print("Added author: " + first_name + " " + last_name)
         except psycopg2.IntegrityError:
             self.conn.rollback()
+            print("Record already exists! Try again.")
 
     def add_author_paper(self, author_id, paper_id):
         try:
