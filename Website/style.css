@@ -1,0 +1,96 @@
+h1{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-align: center;
+}
+
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.row{
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 20px;
+ }
+
+ .wrapper{
+  text-align: center;
+  /*overflow: hidden; */
+ }
+
+ .confranking{
+  width: 100%;
+  float:left;
+  margin-right: 10px;
+ }
+
+ .venueranking{
+  width: 100%;
+  overflow: hidden;
+  margin-left:10px;
+ }
+
+ .description{
+  text-align: left;
+ }
+
+
+
+#locationsearch, #namesearch {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 30%; /* Full-width */
+  font-size: 15px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#aff_table, #venue_table {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 15px; /* Increase font-size */
+}
+
+#aff_table th, #aff_table td, #venue_table th, #venue_table td {
+  text-align: left; /* Left-align text */
+  padding: 5px; /* Add padding */
+}
+
+#aff_table tr, #venue_table tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd; 
+}
+
+#aff_table tr.header, #aff_table tr:hover, #venue_table tr.header, #venue_table tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}

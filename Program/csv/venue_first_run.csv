@@ -1,0 +1,115 @@
+125,"Conference on Innovations in Theoretical Computer Science",0.00712235142487187
+42,"Symposium on Field Programmable Gate Arrays (FPGA)",0.00702285547640338
+122,"Annual IEEE Symposium on Foundations of Computer Science (FOCS)",0.00702014047722136
+121,"Symposium on the Theory of Computing (STOC)",0.00701215330331353
+120,"Robotics: Science and Systems",0.00690729949744456
+5,"Conference on Learning Theory (COLT)",0.00686324876027646
+59,"Theory of Cryptography",0.0065789559684813
+33,"IEEE International Solid-State Circuits Conference (ISSCC)",0.00657474389822488
+6,"International Conference on Artificial Intelligence and Statistics (AISTATS)",0.00638696522076853
+22,"ACM SIGGRAPH/Eurographics Symposium on Computer Animation",0.00634655458621897
+2,"International Conference on Machine Learning (ICML)",0.00629094559008943
+91,"International Conference on Weblogs and Social Media (ICWSM)",0.0060991380434714
+123,"ACM-SIAM Symposium on Discrete Algorithms (SODA)",0.00609135603435379
+129,"Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL)",0.00603266104480858
+39,"International Conference on Computer Aided Design (ICCAD)",0.0060165379404322
+34,"Design Automation Conference (DAC)",0.00599267269614314
+55,"International Conference on Theory and Applications of Cryptographic Techniques (EUROCRYPT)",0.00595780269052752
+44,"Symposium on VLSI Circuits (VLSIC)",0.0059249259934745
+53,"Annual International Cryptology Conference (CRYPTO)",0.00587654247243257
+81,"ACM SIGKDD International Conference on Knowledge Discovery and Data Mining",0.00579742434979085
+82,"ACM International Conference on Web Search and Data Mining",0.00570494931485542
+8,"Conference on Empirical Methods in Natural Language Processing (EMNLP)",0.00567965673222343
+100,"ACM Symposium on User Interface Software and Technology (UIST)",0.00566786385339967
+1,"Neural Information Processing Systems (NeurIPS)",0.00560665990043913
+124,"International Colloquium on Automata, Languages and Programming (ICALP)",0.00560615164566809
+118,"IEEE International Conference on Robotics and Automation (ICRA)",0.00560022046103616
+67,"British Machine Vision Conference (BMVC)",0.00552586332597698
+65,"European Conference on Computer Vision (ECCV)",0.00552514282931087
+31,"Vision Modeling and Visualization (VMV)",0.00552062113210522
+7,"Meeting of the Association for Computational Linguistics (ACL)",0.00545715833384204
+73,"International Symposium on Computer Architecture (ISCA)",0.00543069930595745
+41,"Asia and South Pacific Design Automation Conference (ASP-DAC)",0.00541397107559298
+9,"Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (HLT-NAACL)",0.00539915532818051
+46,"ACM SIGCOMM Conference",0.00538961069424423
+74,"International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)",0.00538484875939948
+27,"ACM Symposium on Interactive 3D Graphics and Games (i3D)",0.00535340468698376
+17,"Spoken Language Technology Workshop (SLT)",0.00532291847556773
+37,"International Conference on Computer Aided Verification (CAV)",0.00531412221712291
+13,"International Conference on Computational Linguistics (COLING)",0.00529836429698512
+14,"Conference of the European Chapter of the Association for Computational Linguistics (EACL)",0.00527529199699514
+51,"IEEE Symposium on Security and Privacy (S&P)",0.00523674881574858
+56,"International Conference on Financial Cryptography and Data Security",0.00523512524993793
+109,"Conference on Computer Supported Cooperative Work (CSCW)",0.00522364770880335
+64,"IEEE International Conference on Computer Vision (ICCV)",0.00521672079447006
+57,"International Conference on The Theory and Application of Cryptology and Information Security (ASIACRYPT)",0.00521519965006555
+35,"Design, Automation and Test in Europe Conference and Exhibition (DATE)",0.00518654677031537
+38,"Workshop on Cryptographic Hardware and Embedded Systems (CHES)",0.00515014565098075
+63,"IEEE Conference on Computer Vision and Pattern Recognition, CVPR",0.00514945238476452
+23,"IEEE Pacific Visualization Symposium (PacificVis)",0.00510970260938377
+43,"Hardware-Oriented Security and Trust",0.005103044016907
+61,"International Conference on Theory and Practice of Public Key Cryptography (PKC)",0.00509882251302455
+119,"IEEE/RSJ International Conference on Intelligent Robots and Systems",0.00506164891733942
+90,"International Conference on Management of Data (SIGMOD)",0.00506063614036922
+84,"SIAM International Conference on Data Mining (SDM)",0.00505165678299204
+106,"Conference on Designing Interactive Systems",0.00497896918044539
+126,"European Symposium on Algorithms (ESA)",0.00497429583090588
+78,"International Conference for High Performance Computing, Networking, Storage and Analysis",0.00497043240502804
+75,"International Symposium on High-Performance Computer Architecture (HPCA)",0.00486396790074321
+99,"ACM Conference on Pervasive and Ubiquitous Computing (UbiComp)",0.00485248979627203
+3,"AAAI Conference on Artificial Intelligence (AAAI)",0.00485190255757575
+93,"Annual International ACM SIGIR Conference on Research and Development in Information Retrieval  (SIGIR)",0.00483382112356718
+88,"International World Wide Web Conferences (WWW)",0.00482037199084939
+69,"IEEE Workshop/Winter Conference on Applications of Computer Vision (WACV)",0.00478684903923493
+36,"Annual IEEE/ACM International Symposium on Microarchitecture (MICRO)",0.00478358752486731
+26,"Graphics Interface Conference",0.00477448445574804
+50,"ACM Symposium on Computer and Communications Security",0.00476954310825072
+49,"Annual International Conference on Mobile Computing and Networking",0.0047637220704443
+108,"Interaction Design and Children",0.00468554685669225
+128,"Theory and Applications of Satisfiability Testing",0.00466706158226517
+101,"IEEE/ACM International Conference on Human-Robot Interaction (HRI)",0.00463521643658052
+45,"IEEE International Conference on Computer Communications (INFOCOM)",0.00459978537371697
+76,"IEEE International Symposium on Parallel & Distributed Processing",0.00459629928748304
+105,"International Conference on Tangible, Embedded, and Embodied Interaction",0.00455462880990932
+25,"IEEE Symposium on Visual Analytics Science and Technology",0.00446014999942278
+40,"IEEE International Symposium on Circuits and Systems (ISCAS)",0.00442696775214829
+70,"IEEE International Conference on Automatic Face & Gesture Recognition (FG)",0.00442041454945592
+107,"Mobile HCI",0.00437756998421839
+110,"ACM International Conference on Multimedia (MM)",0.0043751962789579
+24,"ACM Symposium on Virtual Reality Software and Technology",0.00437183607451144
+94,"International Conference on Information and Knowledge Management (CIKM)",0.00436293547799558
+62,"Fast Software Encryption Workshop (FSE)",0.0043416262531552
+11,"International Conference on Language Resources and Evaluation (LREC)",0.00427581789762757
+97,"Computer Human Interaction (CHI)",0.00427536977011001
+29,"IEEE Symposium on Large Data Analysis and Visualization (LDAV)",0.00425941569837034
+127,"Symposium on Theoretical Aspects of Computer Science (STACS)",0.00414459420141363
+68,"IEEE International Conference on Image Processing (ICIP)",0.00401218947834513
+113,"ACM Multimedia Systems Conference (MMSys)",0.00400091702831345
+87,"Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)",0.00398789142118493
+83,"ACM Conference on Recommender Systems (RecSys)",0.00398271203414701
+103,"International Conference on Intelligent User Interfaces (IUI)",0.0039758739426349
+116,"International Workshop on Quality of Multimedia Experience (QoMEX)",0.00394078327113452
+95,"International Conference on the Semantic Web",0.00389777109197084
+79,"ACM European Conference on Computer Systems",0.00387778631671053
+85,"IEEE International Conference on Big Data (BigData)",0.00383191940679656
+48,"IEEE GLOBECOM",0.0038230709742984
+114,"IEEE International Conference on Multimedia and Expo (ICME)",0.0038199100334146
+102,"International Conference on Multimodal Interaction (ICMI)",0.00381685891889513
+4,"International Joint Conference on Artificial Intelligence (IJCAI)",0.0037316940845836
+89,"International Conference on Very Large Databases",0.00369384560854221
+115,"IEEE International Conference on Advanced Video and Signal-Based Surveillance (AVSS)",0.00356934044835133
+117,"Conference on Multimedia Modeling (MMM)",0.00352682458526329
+111,"International Conference on Multimedia Retrieval (ICMR)",0.00351145055127337
+86,"European Conference on Machine Learning and Knowledge Discovery in Databases",0.00343487996136831
+28,"International Conference on 3D Web Technology",0.00333011336867344
+96,"Workshop of Cross-Language Evaluation Forum",0.00299325112784617
+30,"Visualization and Data Analysis (VDA)",0.00279781217740481
+32,"International Conference on Computer Graphics Theory and Applications (GRAPP)",0.00279036683702314
+18,"International Conference on Computational Linguistics and Intelligent Text Processing",0.00272504937417173
+104,"HCI International",0.00258115124619862
+66,"Pattern Recognition",0.00249438918284759
+47,"IEEE International Conference on Communications in China (ICCC)",0.00246071825904304
+71,"IEEE International Conference on Document Analysis and Recognition (ICDAR)",0.00236918556993001
+16,"China Workshop on Machine Translation (CWMT)",0.00189214567009798
+98,"Chinese Conference on Computer Supported Cooperative Work and Social Computing (ChineseCSCW)",0.00138208208033514
+92,"International Conference on Model and Data Engineering (MEDI)",0.00114580213020138

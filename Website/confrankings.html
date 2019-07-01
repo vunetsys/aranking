@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="venuescript.js"></script>
+    <title>CS Conference and University Rankings</title>
+  </head>
+  <body onload="httpGet()">
+  	<h1> Rankings for Computer Science Conferences and Universities </h1>
+    
+    <ul>
+      <li><a href="cscrankings.html">University Rankings</a></li>
+      <li><a href="confrankings.html">Venue Rankings </a></li>
+    </ul>
+    
+    <div class="venueranking">  
+      <table id ="venue_table">
+      <input type="text" id="namesearch" display="inline" onkeyup="myFunction()" placeholder="Search for venue names..">  
+      <tr>
+          <th>Rank</th>
+          <th>Venue</th> 
+          <th>Category</th>
+        </tr>
+    </table>
+    </div>  
+
+  </body>
+</html>
+

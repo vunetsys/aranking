@@ -1,0 +1,502 @@
+1 University of Oxford
+2 University of Cambridge
+3 Stanford University
+4 Massachusetts Institute of Technology
+5 California Institute of Technology
+6 Harvard University
+7 Princeton University
+8 Yale University
+9 Imperial College London
+10 University of Chicago
+11 ETH Zurich
+12 Johns Hopkins University
+12 University of Pennsylvania
+14 UCL
+15 University of California, Berkeley
+16 Columbia University
+17 University of California, Los Angeles
+18 Duke University
+19 Cornell University
+20 University of Michigan-Ann Arbor
+21 University of Toronto
+22 Tsinghua University
+23 National University of Singapore
+24 Carnegie Mellon University
+25 Northwestern University
+26 London School of Economics and Political Science
+27 New York University
+28 University of Washington
+29 University of Edinburgh
+30 University of California, San Diego
+31 Peking University
+32 LMU Munich
+32 University of Melbourne
+34 Georgia Institute of Technology
+35 École Polytechnique Fédérale de Lausanne
+36 University of Hong Kong
+37 University of British Columbia
+38 King’s College London
+39 University of Texas at Austin
+40 Karolinska Institute
+41 Hong Kong University of Science and Technology
+41 Paris Sciences et Lettres – PSL Research University Paris
+42 The University of Tokyo
+43 University of Wisconsin-Madison
+44 McGill University
+44 Technical University of Munich
+47 Heidelberg University
+48 KU Leuven
+49 Australian National University
+50 University of Illinois at Urbana-Champaign
+51 Nanyang Technological University, Singapore
+52 University of California, Santa Barbara
+53 Brown University
+53 Chinese University of Hong Kong
+54 Washington University in St Louis
+56 University of North Carolina at Chapel Hill
+57 University of Manchester
+58 Delft University of Technology
+59 University of California, Davis
+59 University of Sydney
+59 Wageningen University & Research
+62 University of Amsterdam
+63 Seoul National University
+64 Purdue University West Lafayette
+65 Kyoto University
+66 University of Southern California
+67 Humboldt University of Berlin
+68 Leiden University
+69 University of Queensland
+70 Erasmus University Rotterdam
+71 University of Minnesota Twin Cities
+71 Ohio State University
+73 Sorbonne University
+74 Boston University
+74 Utrecht University
+76 University of Freiburg
+77 McMaster University
+78 University of Bristol
+79 University of Groningen
+79 University of Warwick
+81 Pennsylvania State University
+82 University of Maryland, College Park
+82 Sungkyunkwan University (SKKU)
+84 Emory University
+84 Monash University
+86 Rice University
+87 RWTH Aachen University
+87 Uppsala University
+89 University of Tübingen
+90 Charité - Universitätsmedizin Berlin
+90 University of Montreal
+90 University of Zurich
+93 University of Science and Technology of China
+93 University of Glasgow
+93 Michigan State University
+96 University of California, Irvine
+96 UNSW Sydney
+98 Lund University
+99 Dartmouth College
+99 University of Helsinki
+101 Zhejiang University
+102 Korea Advanced Institute of Science and Technology (KAIST)
+103 University of Basel
+104 Free University of Berlin
+104 Fudan University
+106 University of Sheffield
+107 University of Virginia
+108 École Polytechnique
+109 Georgetown University
+110 University of Bern
+110 University of Bonn
+110 City University of Hong Kong
+110 University of Pittsburgh-Pittsburgh campus
+114 University of Colorado Boulder
+114 Durham University
+116 University of Birmingham
+116 University of Copenhagen
+118 University of Southampton
+119 University of York
+120 Trinity College Dublin
+121 University of Oslo
+121 Vanderbilt University
+123 Aarhus University
+123 Arizona State University
+123 University of Göttingen
+123 University of Mannheim
+123 Radboud University Nijmegen
+128 Université Catholique de Louvain
+128 Maastricht University
+130 Queen Mary University of London
+131 Technical University of Berlin
+132 University of Alberta
+132 Case Western Reserve University
+134 Nanjing University
+134 University of Western Australia
+135 University of Adelaide
+135 University of Geneva
+135 University of Hamburg
+135 Karlsruhe Institute of Technology
+135 Pompeu Fabra University
+141 University of Exeter
+142 Pohang University of Science and Technology (POSTECH)
+143 Ghent University
+143 University of Vienna
+145 Autonomous University of Barcelona
+146 University of Cologne
+146 Indiana University
+146 Lancaster University
+149 University of Nottingham
+149 Ulm University
+151 TU Dresden
+152 Tufts University
+153 University of Leeds
+153 Sant’Anna School of Advanced Studies – Pisa
+153 Stockholm University
+156 University of Cape Town
+156 University of Florida
+158 University of Aberdeen
+159 University of Arizona
+159 Hong Kong Polytechnic University
+159 University of Würzburg
+161 Scuola Normale Superiore di Pisa
+161 University of Sussex
+163 University of Rochester
+163 Technical University of Denmark
+165 University of St Andrews
+166 Vrije Universiteit Amsterdam
+167 University of California, Santa Cruz
+167 Eindhoven University of Technology
+167 University of Leicester
+170 National Taiwan University
+171 Newcastle University
+171 Texas A&M University
+173 University of Notre Dame
+175 University of Erlangen-Nuremberg
+176 University of Lausanne
+176 University of Ottawa
+176 Rutgers, the State University of New Jersey
+179 University of Alabama at Birmingham
+180 University of Bologna
+181 Aalto University
+181 George Washington University
+181 University of Liverpool
+184 University of Münster
+184 Northeastern University
+184 University of Twente
+187 Cardiff University
+187 KTH Royal Institute of Technology
+189 University of Konstanz
+189 Shanghai Jiao Tong University
+190 University of Duisburg-Essen
+190 University of East Anglia
+190 Western University
+194 Aalborg University
+194 Paris Diderot University – Paris 7
+196 University of Technology Sydney
+197 University of Bergen
+198 Korea University
+199 University of Calgary
+199 Lomonosov Moscow State University
+201–250 University of Antwerp
+201–250 University of Auckland
+201–250 University of Barcelona
+201–250 University of Bath
+201–250 Bielefeld University
+201–250 Brandeis University
+201–250 University at Buffalo
+201–250 University of California, Riverside
+201–250 Chalmers University of Technology
+201–250 Copenhagen Business School
+201–250 University of Dundee
+201–250 École des Ponts ParisTech
+201–250 École Normale Supérieure de Lyon
+201–250 University of Fribourg
+201–250 University of Gothenburg
+201–250 University of Hawai’i at Mānoa
+201–250 Hebrew University of Jerusalem
+201–250 University of Hohenheim
+201–250 University of Iowa
+201–250 James Cook University
+201–250 University of Kiel
+201–250 King Abdulaziz University
+201–250 Université Libre de Bruxelles
+201–250 University of Luxembourg
+201–250 Macquarie University
+201–250 University of Massachusetts
+201–250 Medical University of Graz
+201–250 Medical University of Vienna
+201–250 University of Miami
+201–250 University of Otago
+201–250 University of Padua
+201–250 Paris-Sud University
+201–250 University of Passau
+201–250 University of Potsdam
+201–250 Queen’s University Belfast
+201–250 Queensland University of Technology
+201–250 University of Reading
+201–250 Royal College of Surgeons in Ireland (RCSI)
+201–250 University of South Australia
+201–250 University of Tampere
+201–250 Tel Aviv University
+201–250 Tilburg University
+201–250 Ulsan National Institute of Science and Technology
+201–250 University College Dublin
+201–250 University of Utah
+201–250 Vita-Salute San Raffaele University
+201–250 University of Waterloo
+201–250 William & Mary
+201–250 University of the Witwatersrand
+201–250 University of Wollongong
+201–250 Yonsei University (Seoul campus)
+251–300 Brighton and Sussex Medical School
+251–300 University of Canberra
+251–300 University of Cincinnati
+251–300 Clark University
+251–300 Colorado School of Mines
+251–300 Dalhousie University
+251–300 University of Delaware
+251–300 University of Essex
+251–300 Flinders University
+251–300 Florida State University
+251–300 Goethe University Frankfurt
+251–300 Griffith University
+251–300 University of Iceland
+251–300 University of Illinois at Chicago
+251–300 Indian Institute of Science
+251–300 Jacobs University
+251–300 Johannes Gutenberg University of Mainz
+251–300 Laval University
+251–300 University of Marburg
+251–300 Moscow Institute of Physics and Technology
+251–300 University of Navarra
+251–300 North Carolina State University
+251–300 Oregon Health and Science University
+251–300 Osaka University
+251–300 University of Oulu
+251–300 Queen’s University
+251–300 Royal Holloway, University of London
+251–300 Ruhr University Bochum
+251–300 St George’s, University of London
+251–300 University of São Paulo
+251–300 Sapienza University of Rome
+251–300 Simon Fraser University
+251–300 University of Southern Denmark
+251–300 University of South Florida
+251–300 Stony Brook University
+251–300 University of Stuttgart
+251–300 University of Surrey
+251–300 Swansea University
+251–300 Swedish University of Agricultural Sciences
+251–300 Syracuse University
+251–300 Technical University of Darmstadt
+251–300 University of Texas at Dallas
+251–300 Tohoku University
+251–300 Tokyo Institute of Technology
+251–300 University of Trento
+251–300 Vienna University of Technology
+251–300 Virginia Polytechnic Institute and State University
+251–300 Vrije Universiteit Brussel
+251–300 Wake Forest University
+301–350 Aix-Marseille University
+301–350 University of Alaska Fairbanks
+301–350 Alfaisal University
+301–350 American University
+301–350 Anglia Ruskin University
+301–350 Auckland University of Technology
+301–350 University of Bayreuth
+301–350 Birkbeck, University of London
+301–350 Boston College
+301–350 University of Bremen
+301–350 University of Canterbury
+301–350 University of Colorado Denver
+301–350 University of Connecticut
+301–350 Curtin University
+301–350 Cyprus University of Technology
+301–350 University of Denver
+301–350 Federal University of Toulouse Midi-Pyrénées
+301–350 George Mason University
+301–350 Grenoble Alpes University
+301–350 Heriot-Watt University
+301–350 Higher School of Economics
+301–350 University of Houston
+301–350 Khalifa University
+301–350 La Trobe University
+301–350 University of Liège
+301–350 University of Malaya
+301–350 University of Milan
+301–350 Montpellier University
+301–350 Nagoya University
+301–350 University of Naples Federico II
+301–350 National University of Ireland, Galway
+301–350 University of Newcastle
+301–350 University of New Mexico
+301–350 Oregon State University
+301–350 University of Pisa
+301–350 Polytechnic University of Milan
+301–350 Reykjavík University
+301–350 Southern University of Science and Technology (SUSTech)
+301–350 Stellenbosch University
+301–350 Sun Yat-sen University
+301–350 University of Tartu
+301–350 Technion Israel Institute of Technology
+301–350 University of Tennessee, Knoxville
+301–350 Technical University of Dortmund
+301–350 Tulane University
+301–350 Umeå University
+301–350 University College Cork
+301–350 Université de Versailles Saint-Quentin-en-Yvelines
+301–350 University of Victoria
+301–350 Victoria University
+301–350 Washington State University
+301–350 Wayne State University
+301–350 Wuhan University
+351–400 Aberystwyth University
+351–400 Aston University
+351–400 Autonomous University of Madrid
+351–400 Babol Noshirvani University of Technology
+351–400 University of California, Merced
+351–400 City, University of London
+351–400 University of Côte d’Azur
+351–400 University of Crete
+351–400 University of Cyprus
+351–400 Deakin University
+351–400 Drexel University
+351–400 University of Eastern Finland
+351–400 Free University of Bozen-Bolzano
+351–400 Hanyang University
+351–400 Hofstra University
+351–400 Huazhong University of Science and Technology
+351–400 IMT Atlantique
+351–400 Indian Institute of Technology Indore
+351–400 University of Innsbruck
+351–400 Iowa State University
+351–400 Jordan University of Science and Technology
+351–400 Justus Liebig University Giessen
+351–400 University of Kansas
+351–400 University of Kent
+351–400 Kyung Hee University
+351–400 Linköping University
+351–400 University of Macau
+351–400 Maynooth University
+351–400 University of Modena and Reggio Emilia
+351–400 Nankai University
+351–400 National Research Nuclear University MEPhI
+351–400 University of Nebraska-Lincoln
+351–400 Norwegian University of Science and Technology
+351–400 University of Perugia
+351–400 Rensselaer Polytechnic Institute
+351–400 Rush University
+351–400 Sabancı University
+351–400 University of Salerno
+351–400 University of Siena
+351–400 University of Stirling
+351–400 University of Tasmania
+351–400 Temple University
+351–400 University of Turku
+351–400 United Arab Emirates University
+351–400 University of Vermont
+351–400 Western Sydney University
+351–400 York University
+401–500 University of Alabama
+401–500 University of Alabama in Huntsville
+401–500 American University of Beirut
+401–500 Australian Catholic University
+401–500 Bangor University
+401–500 University of Bari Aldo Moro
+401–500 Bar-Ilan University
+401–500 University of Bordeaux
+401–500 Brunel University London
+401–500 University of Calabria
+401–500 University of Campinas
+401–500 Catholic University of the Sacred Heart
+401–500 Centrale Nantes
+401–500 CentraleSupélec
+401–500 Charles University in Prague
+401–500 Claude Bernard University Lyon 1
+401–500 Colorado State University
+401–500 Complutense University of Madrid
+401–500 University of Desarrollo
+401–500 Diego Portales University
+401–500 Dublin City University
+401–500 University of Ferrara
+401–500 University of Florence
+401–500 Florida International University
+401–500 Fujita Health University
+401–500 University of Genoa
+401–500 University of Georgia
+401–500 Georgia State University
+401–500 Graz University of Technology
+401–500 University of Greifswald
+401–500 Gwangju Institute of Science and Technology
+401–500 Hamburg University of Technology
+401–500 Harbin Institute of Technology
+401–500 Hasselt University
+401–500 Hokkaido University
+401–500 Hong Kong Baptist University
+401–500 Indian Institute of Technology Bombay
+401–500 Indian Institute of Technology Roorkee
+401–500 JSS Academy of Higher Education and Research
+401–500 University of Jyväskylä
+401–500 University of Kaiserslautern
+401–500 University of Kentucky
+401–500 Koç University
+401–500 University of KwaZulu-Natal
+401–500 Kyushu University
+401–500 Leibniz University Hanover
+401–500 University of Lille
+401–500 Loughborough University
+401–500 University of Manitoba
+401–500 Marche Polytechnic University
+401–500 Middlesex University
+401–500 University of Milan-Bicocca
+401–500 University of Montana
+401–500 Murdoch University
+401–500 National Taiwan University of Science and Technology (Taiwan Tech)
+401–500 National Tsing Hua University
+401–500 University of Nebraska Medical Center
+401–500 New Mexico Institute of Mining and Technology
+401–500 Northern Arizona University
+401–500 Northumbria University
+401–500 University of Oklahoma
+401–500 Örebro University
+401–500 University of Pavia
+401–500 University of Plymouth
+401–500 Polytechnic University of Bari
+401–500 Polytechnic University of Turin
+401–500 University of Porto
+401–500 University of Portsmouth
+401–500 Qatar University
+401–500 RMIT University
+401–500 University of Rome II – Tor Vergata
+401–500 University of Rome III
+401–500 University of Rovira i Virgili
+401–500 Royal Veterinary College
+401–500 University of St Gallen
+401–500 University of Saskatchewan
+401–500 Sciences Po
+401–500 Semmelweis University
+401–500 University of Siegen
+401–500 SOAS University London
+401–500 University of South Carolina-Columbia
+401–500 State University of New York Albany
+401–500 University of Strasbourg
+401–500 University of Strathclyde
+401–500 Swinburne University of Technology
+401–500 Tampere University of Technology
+401–500 Teikyo University
+401–500 Tokyo Medical and Dental University (TMDU)
+401–500 Tokyo Metropolitan University
+401–500 Tongji University
+401–500 University of Trieste
+401–500 University of Tsukuba
+401–500 University of Tulsa
+401–500 University of Turin
+401–500 UiT The Arctic University of Norway
+401–500 University of Urbino Carlo Bo
+401–500 University of Valencia
+401–500 Verona University
+401–500 University of Waikato
+401–500 Victoria University of Wellington
+401–500 University of the West of Scotland
+401–500 University of Wisconsin-Milwaukee

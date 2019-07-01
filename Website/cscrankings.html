@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="affiliationscript.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>CS Conference and University Rankings</title>
+  </head>
+  <body  onload="httpGet()">
+  	<h1> Rankings for Computer Science Conferences and Universities </h1>
+    <div class="row">
+    <ul>
+      <li><a href="cscrankings.html">University Rankings</a></li>
+      <li><a href="confrankings.html">Venue Rankings </a></li>
+      <li><a href="confrankings.html">About the ranking method</a></li>
+    </ul>
+    <div>
+
+    <div class="description">
+      <p class="descriptionp">This website contains rankings for Computer Science Conferences and Universities. The rankings are calculated using a HITS-like algorithm. The venue ranking is based on the number of good universities publishing at the venue, and the university ranking is based at the number of good venues it has published. These rankings should not be seen as general rankings, merely rankings that show the best universities in terms of publishing research at computer science conferences. </p>
+    </div>
+
+    <div id="wrapper">
+    <div class="confranking">
+      <input type="text" id="namesearch" display="inline" onkeyup="myFunction()" placeholder="Search for universities..">  
+      <input type="text" id="locationsearch" display="inline" onkeyup="myFunction2()" placeholder="Search for countries..">  
+
+    <table id ="aff_table">
+        <tr>
+          <th>Rank</th>
+          <th>University</th> 
+          <th>Location</th>
+        </tr>
+    </table>
+    </div>
+
+
+    <!-- <div class="venueranking">  
+      <table id ="venue_table">
+      <input type="text" id="namesearch" display="inline" onkeyup="myFunction3()" placeholder="Search for venue names..">  
+      <tr>
+          <th>Rank</th>
+          <th>Venue</th> 
+          <th>Category</th>
+        </tr>
+    </table>
+    </div> -->  
+  </div>
+  </body>
+</html>
+

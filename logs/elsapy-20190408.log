@@ -1,6 +1,0 @@
-2019-04-08 09:48:55,815 - elsapy.elsclient - INFO - Module loaded.
-2019-04-08 09:48:55,819 - elsapy.elsentity - INFO - Module loaded.
-2019-04-08 09:48:55,820 - elsapy.elsprofile - INFO - Module loaded.
-2019-04-08 09:48:55,822 - elsapy.elsdoc - INFO - Module loaded.
-2019-04-08 09:48:55,823 - elsapy.elssearch - INFO - Module loaded.
-2019-04-08 09:48:56,820 - elsapy.elsclient - INFO - Sending GET request to https://api.elsevier.com/content/search/author?query=authlast(keuskamp)

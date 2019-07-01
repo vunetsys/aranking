@@ -2,17 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="380d71d2-189e-44ec-bb3e-76cd3d7aae65" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/academic-ranking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/academic-ranking.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup_db/.academicrankings.sql.zip.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/crawled_papers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/crawled_papers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backup_db/academicrankings.sql.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backup_db/rankings.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm_first_run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/conferences_low_missing.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/crawled_conferences.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/crawled_papers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/no_result_dict.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/no_result_papers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/paper_titles.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dblp_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/dblp_crawler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/general.py" beforeDir="false" afterPath="$PROJECT_DIR$/general.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initial_rankings.py" beforeDir="false" afterPath="$PROJECT_DIR$/initial_rankings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scopus_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/scopus_crawler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newfile1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newfile2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ranked_universities.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rankedids.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scholar_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/scholar_crawler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scoring_algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/scoring_algorithm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/conference_counts.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/thread_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/thread_database.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,33 +39,7 @@
     <favorites_list name="academic-ranking" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scoring_algorithm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1654">
-              <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2190">
-              <caret line="195" selection-start-line="195" selection-end-line="195" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-                <element signature="e#1780#3944#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -68,6 +56,10 @@
       <find>with ope</find>
       <find>with open</find>
       <find>iran</find>
+      <find>toko</find>
+      <find>no_result</find>
+      <find>visited</find>
+      <find>get_venues</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -94,7 +86,6 @@
         <option value="$PROJECT_DIR$/crawled_papers.txt" />
         <option value="$PROJECT_DIR$/no_result_papers.txt" />
         <option value="$PROJECT_DIR$/conferences_low_missing.txt" />
-        <option value="$PROJECT_DIR$/general.py" />
         <option value="$PROJECT_DIR$/docs/ranking_shanghai500.txt" />
         <option value="$PROJECT_DIR$/docs/ranking_qs.txt" />
         <option value="$PROJECT_DIR$/docs/ranking_the.txt" />
@@ -105,29 +96,31 @@
         <option value="$PROJECT_DIR$/rankedids.txt" />
         <option value="$PROJECT_DIR$/worldrankings_crawler.py" />
         <option value="$PROJECT_DIR$/algorithm.py" />
-        <option value="$PROJECT_DIR$/initial_rankings.py" />
         <option value="$PROJECT_DIR$/algorithm_first_run.py" />
         <option value="$PROJECT_DIR$/scopus_crawler.py" />
-        <option value="$PROJECT_DIR$/thread_database.py" />
+        <option value="$PROJECT_DIR$/plot.py" />
+        <option value="$PROJECT_DIR$/docs/test234.txt" />
+        <option value="$PROJECT_DIR$/general.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/scholar_crawler.py" />
-        <option value="$PROJECT_DIR$/dblp_crawler.py" />
-        <option value="$PROJECT_DIR$/database.py" />
         <option value="$PROJECT_DIR$/scoring_algorithm.py" />
+        <option value="$PROJECT_DIR$/database.py" />
+        <option value="$PROJECT_DIR$/scholar_crawler.py" />
+        <option value="$PROJECT_DIR$/thread_database.py" />
+        <option value="$PROJECT_DIR$/dblp_crawler.py" />
+        <option value="$PROJECT_DIR$/initial_rankings.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="33" />
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="810" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,13 +130,17 @@
             </path>
             <path>
               <item name="academic-ranking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="academic-ranking" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="academic-ranking" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -152,6 +149,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -202,9 +204,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="33" y="23" width="1280" height="810" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4949495" visible="true" weight="0.36060366" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4949495" visible="true" weight="0.16420014" />
       <window_info id="Structure" order="1" sideWeight="0.5050505" side_tool="true" weight="0.36060366" />
       <window_info id="Favorites" order="2" sideWeight="0.5050505" side_tool="true" weight="0.36060366" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -215,21 +217,15 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.329927" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49642575" visible="true" weight="0.77437323" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49642575" weight="0.2626506" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50357425" side_tool="true" weight="0.5863014" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32876712" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32771084" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/unaf_authors.txt" />
-    <entry file="file://$PROJECT_DIR$/worker.py" />
-    <entry file="file://$PROJECT_DIR$/ieee_crawler.py" />
-    <entry file="file://$PROJECT_DIR$/countries.txt" />
-    <entry file="file:///usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/xml/etree/ElementTree.py" />
-    <entry file="file:///usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py" />
     <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/requests/structures.py" />
     <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/requests/utils.py" />
     <entry file="file://$USER_HOME$/venv/lib/python3.7/site-packages/requests/sessions.py" />
@@ -298,23 +294,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/google_search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/crawled_conferences.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-25721" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/no_result_papers.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="30797" lean-forward="true" selection-start-line="30797" selection-end-line="30797" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/https%3A%2F%2Fapi.elsevier.com%2Fcontent%2Farticle%2Fpii%2FS1674927814000082.json" />
@@ -333,57 +315,43 @@
         <state relative-caret-position="-1709966" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newfile1.txt">
+    <entry file="file://$PROJECT_DIR$/docs/test234.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10841" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newfile2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm_first_run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-588">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="497">
+          <caret line="4042" column="50" selection-start-line="4042" selection-start-column="50" selection-end-line="4042" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scholar_crawler.py">
+    <entry file="file://$PROJECT_DIR$/algorithm.py" />
+    <entry file="file://$PROJECT_DIR$/algorithm_first_run.py" />
+    <entry file="file://$PROJECT_DIR$/config.json" />
+    <entry file="file://$PROJECT_DIR$/google_search.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/initial_rankings.py">
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot.py" />
+    <entry file="file://$PROJECT_DIR$/pyvenv.cfg">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ranked_universities.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/no_result_papers.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-            <element signature="e#345#1052#0" />
-            <element signature="e#2635#2785#0" />
-            <element signature="e#2822#3007#0" />
-            <element signature="e#3032#4656#0" />
-          </folding>
+        <state relative-caret-position="726">
+          <caret line="30797" selection-start-line="30797" selection-end-line="30797" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scopus_crawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="645">
           <caret line="68" column="37" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="37" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
@@ -394,48 +362,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/worldrankings_crawler.py">
+    <entry file="file://$PROJECT_DIR$/newfile2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newfile1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/conference_counts.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/general.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dblp_crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="178" column="17" selection-start-line="178" selection-start-column="17" selection-end-line="178" selection-end-column="17" />
+        <state relative-caret-position="420">
+          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#297#1675#0" />
-            <element signature="e#1705#2463#0" />
-            <element signature="e#2507#2551#0" />
-            <element signature="e#2586#3276#0" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        <state relative-caret-position="2380">
+          <caret line="140" column="38" lean-forward="true" selection-start-line="140" selection-start-column="38" selection-end-line="140" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thread_database.py">
+    <entry file="file://$PROJECT_DIR$/database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+        <state relative-caret-position="3585">
+          <caret line="239" column="86" selection-start-line="239" selection-start-column="86" selection-end-line="239" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scholar_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -444,21 +417,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scoring_algorithm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1654">
-          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        <state relative-caret-position="-205">
+          <caret line="74" column="26" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="26" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#72#693#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database.py">
+    <entry file="file://$PROJECT_DIR$/thread_database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2190">
-          <caret line="195" selection-start-line="195" selection-end-line="195" />
+        <state relative-caret-position="255">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
-            <element signature="e#1780#3944#0" />
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_rankings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="31" column="44" lean-forward="true" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#345#1052#0" />
+            <element signature="e#1087#2008#0" />
+            <element signature="e#2063#2596#0" />
+            <element signature="e#2635#2785#0" />
+            <element signature="e#2822#3007#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dblp_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="74" column="52" lean-forward="true" selection-start-line="74" selection-start-column="52" selection-end-line="74" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#297#1675#0" />
+            <element signature="e#2507#2551#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worldrankings_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
