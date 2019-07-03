@@ -3,6 +3,7 @@ from psycopg2.pool import ThreadedConnectionPool
 
 link_base_dblp = "https://dblp.org/search/venue/api?q="
 
+
 DSN = "host='localhost' dbname='rankedcategories' user='lucas'"
 tcp = ThreadedConnectionPool(1, 18, DSN)
 

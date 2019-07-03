@@ -18,7 +18,6 @@ rank_names = {
     "Robotics": "rank_rb",
     "Theoretical Computer Science": "rank_tcs",
 }
-num_of_cycles = 1
 
 
 def conference_scoring():
@@ -127,6 +126,7 @@ def affiliation_scoring():
             db.conn.commit()
 
 
-for i in range(num_of_cycles):
-    conference_scoring()
-    affiliation_scoring()
+def run_algorithm(num_of_cycles):
+    for i in range(num_of_cycles):
+        conference_scoring()
+        affiliation_scoring()

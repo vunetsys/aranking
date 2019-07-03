@@ -1,6 +1,9 @@
 from general import similar
 import psycopg2 as p
 
+database = "rankecategorie"
+user = "lucas"
+
 # TABLE CREATION
 
 # c.execute('''CREATE TABLE scholar_venues (name text UNIQUE, category text)''')
@@ -31,67 +34,14 @@ import psycopg2 as p
 # location text, ranking INTEGER)''')
 
 
-def remove_duplicate_affiliations():
-    conn = p.connect(database='rankedcategories', user='lucas')
-    c = conn.cursor()
-
-    c.execute("select affiliation, country from affiliations group by affiliation, "
-              "country having count(*) > 1 order by country asc")
-
-    double_values = c.fetchall()
-
-    for value in double_values:
-        affiliation = value[0]
-        country = value[1]
-        c.execute("SELECT id FROM affiliations WHERE affiliation=%s AND country=%s", (affiliation, country))
-        ids = c.fetchall()
-
-        new_id = ids[0][0]
-
-        for id in ids[1:]:
-            old_id = id[0]
-            c.execute("UPDATE authors SET affiliation_id=%s WHERE affiliation_id=%s", (new_id, old_id))
-            c.execute("DELETE FROM affiliations where id=%s", (old_id,))
-            conn.commit()
-
-    c.execute("SELECT DISTINCT country from affiliations")
-    countries = c.fetchall()
-
-    count = 0
-    for country in countries:
-        # print(country[0])
-        c.execute("SELECT * FROM affiliations WHERE country=%s ORDER BY affiliation ASC", (country[0],))
-        affiliations = c.fetchall()
-        if len(affiliations) > 1:
-            for aff in affiliations:
-                current_id = aff[0]
-                current_affiliation = aff[1]
-                # print(current_affiliation)
-                for other_aff in affiliations:
-                    other_id = other_aff[0]
-                    other_affiliation = other_aff[1]
-                    if similar(other_affiliation, current_affiliation) >= 0.95 and current_id != other_id:
-                        # print(current_affiliation + " matches: " + other_affiliation[1])
-                        c.execute("UPDATE authors SET affiliation_id=%s WHERE affiliation_id=%s",
-                                     (current_id, other_id))
-                        c.execute("DELETE FROM affiliations where id=%s", (other_id,))
-                        conn.commit()
-                        affiliations.remove(other_aff)
-                        count += 1
-                        print(
-                            "DELETED AFFILIATION: " + other_affiliation + " AND REPLACED WITH: " + current_affiliation)
-    print(count)
-
-
 class Database:
 
     def __init__(self):
-        self.conn = p.connect(database='rankedcategories', user='lucas')
+        connection = "dbname=" + database + " user=" + user
+        self.conn = p.connect(connection)
         self.c = self.conn.cursor()
-        # self.conn = sqlite3.connect('rankings.db', timeout=20, check_same_thread=False)
-        # self.c = self.conn.cursor()
-        # self.c.execute("PRAGMA journal_mode=WAL;")
-        # self.conn.commit()
+        self.c.execute("SELECT * FROM venues")
+        print(self.c.fetchall())
 
     def close_db(self):
         self.c.close()
@@ -244,3 +194,102 @@ class Database:
                         "(SELECT user_id FROM authors WHERE affiliation_id=%s)))) "
                         "AND ranking is NOT NULL", (aff_id,))
         return self.c.fetchall()
+
+
+def remove_duplicate_affiliations():
+    # Removes all duplicate affiliations having the same name.
+    conn = p.connect(database='rankedcategories', user='lucas')
+    c = conn.cursor()
+
+    c.execute("select affiliation, country from affiliations group by affiliation, "
+              "country having count(*) > 1 order by country asc")
+
+    double_values = c.fetchall()
+
+    for value in double_values:
+        affiliation = value[0]
+        country = value[1]
+        c.execute("SELECT id FROM affiliations WHERE affiliation=%s AND country=%s", (affiliation, country))
+        ids = c.fetchall()
+
+        new_id = ids[0][0]
+
+        for id in ids[1:]:
+            old_id = id[0]
+            c.execute("UPDATE authors SET affiliation_id=%s WHERE affiliation_id=%s", (new_id, old_id))
+            c.execute("DELETE FROM affiliations where id=%s", (old_id,))
+            conn.commit()
+
+    c.execute("SELECT DISTINCT country from affiliations")
+    countries = c.fetchall()
+
+    count = 0
+    for country in countries:
+        # print(country[0])
+        c.execute("SELECT * FROM affiliations WHERE country=%s ORDER BY affiliation ASC", (country[0],))
+        affiliations = c.fetchall()
+        if len(affiliations) > 1:
+            for aff in affiliations:
+                current_id = aff[0]
+                current_affiliation = aff[1]
+                # print(current_affiliation)
+                for other_aff in affiliations:
+                    other_id = other_aff[0]
+                    other_affiliation = other_aff[1]
+                    if similar(other_affiliation, current_affiliation) >= 0.95 and current_id != other_id:
+                        # print(current_affiliation + " matches: " + other_affiliation[1])
+                        c.execute("UPDATE authors SET affiliation_id=%s WHERE affiliation_id=%s",
+                                     (current_id, other_id))
+                        c.execute("DELETE FROM affiliations where id=%s", (other_id,))
+                        conn.commit()
+                        affiliations.remove(other_aff)
+                        count += 1
+                        print(
+                            "DELETED AFFILIATION: " + other_affiliation + " AND REPLACED WITH: " + current_affiliation)
+    print(count)
+
+
+def check_paper_counts():
+    db = Database()
+    # Checks all conferences for their affiliation paper counts. If count is too low, conference is removed from
+    # consideration.
+    db.c.execute("SELECT id FROM conferences ORDER BY ID ASC")
+    conference_ids = db.c.fetchall()
+
+    with open("docs/conference_counts.txt", 'a') as f:
+        for id in conference_ids:
+            paper_count = 0
+            total_paper_count = 0
+
+            print("CONF: " + str(id))
+            db.c.execute("SELECT id FROM papers WHERE conference_id=%s ORDER BY ID ASC", (id,))
+            paper_ids = db.c.fetchall()
+            for pid in paper_ids:
+                db.c.execute("SELECT 1 FROM authors_papers WHERE paper_id=%s", (pid,))
+                if db.c.fetchall():
+                    paper_count += 1
+                total_paper_count += 1
+            percentage = (paper_count / total_paper_count) * 100
+            if percentage < 85:
+                print("Number of present papers: " + str(percentage) + "%")
+                f.write("Conference: " + str(id[0]) + " papers: " + str(percentage) + "%\n")
+
+    f.close()
+
+    with open('docs/conference_counts.txt', 'r') as f:
+        for line in f:
+            conf_id = line.split()[1]
+            percentage = line.split()[3]
+            percentage = percentage[:-1]
+            if float(percentage) <= 30.0:
+                print(conf_id)
+                db.c.execute(
+                    "DELETE FROM authors_papers WHERE paper_id IN (SELECT id from papers WHERE conference_id=%s)",
+                    (conf_id,))
+                db.conn.commit()
+                db.c.execute("DELETE FROM papers WHERE conference_id=%s", (conf_id,))
+                db.conn.commit()
+                db.c.execute("DELETE FROM conferences WHERE id=%s", (conf_id,))
+                db.conn.commit()
+    f.close()
+    db.close_db()

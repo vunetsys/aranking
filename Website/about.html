@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="affiliationscript.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>CS Conference and University Rankings</title>
+  </head>
+  <body  onload="httpGet()">
+  	<h1> Rankings for Computer Science Conferences and Universities </h1>
+    <div class="row">
+    <ul>
+      <li><a href="cscrankings.html">University Rankings</a></li>
+      <li><a href="confrankings.html">Venue Rankings </a></li>
+      <li><a href="about.html">About the ranking method</a></li>
+    </ul>
+    <div>
+      <p style='text-align: left'>
+        This website contains rankings for Computer Science Conferences and Universities. The aim of the ranking is to show which universities are best in publishing their papers at top conferences, and to show which conferences have the best universities publishing there. The way the ranking is calculated is based on the HITS-algorithm by Jon Kleinberg. This algorithm is built around the idea that the internet contains hubs and authorities. Authority scores are based on the number of hubs they are linked from, and hub scores are based on the number of authorities they link to. Read more about the HITS-algorithm <a href='https://www.cs.cornell.edu/home/kleinber/auth.pdf'>here</a>. 
+      </p>
+      <p style='text-align: left'> 
+      The idea of the ranking is to base university ranking scores on the conferences they published at, and the conference scores on the universities that have published there. To bootstrap the algorithm, the top 500 universities from QS, THE and ARWU have been retrieved and initial scorings have been calculated. After that, the algorithm was run for 6 cycles, to calculate all scorings to let the algorithm converge. In total, 3879 universities and 115 conference venues were ranked. This website only presents the top 1000 universities.</p>
+
+      <p style='text-align: left'>
+        All data was retrieved from Google Scholar, dblp and Scopus.
+      </p>
+
+      <p style='text-align: left'>
+        A schematic overview of the algorithm:
+      </p>
+      <div>
+        <p style='text-align: left'>The affiliation update method:</p>
+        <img src='alg1.png' style='text-align: left'>
+      </div>
+      <div>
+        <p style='text-align: left'>The university update method:</p>
+        <img src='alg2.png' style="text-align: left">
+      </div>
+  </div>
+  </body>
+</html>
+

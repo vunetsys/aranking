@@ -40,21 +40,22 @@ function makeVisible(id){
   document.getElementById(divid).style.display = "block";
 } 
 
+
 function deleteTable(aff_id){
   hoverid = "hover" + aff_id;
   divid = "div" + aff_id;
   tableid = "table" + aff_id;
 
   document.getElementById(hoverid).innerHTML = "►";
-  var elem = document.getElementById(divid).remove();
+  // var elem = document.getElementById(divid).remove();
   // elem.parentNode.removeChild(divid);
 
-  var elem = document.getElementById(tableid).rmeove();
+  // var elem = document.getElementById(tableid).remove();
   // elem.parentNode.removeChild(tableid);
 
   test_span = document.getElementById(hoverid);
   test_span.onclick = function() {
-              generateVenuePage(id);  
+              generateVenuePage(aff_id);  
           }
 }
 
@@ -69,8 +70,8 @@ function generateVenuePage(aff_id){
 
   divid = "div" + aff_id;
   tableid = "table" + aff_id;
-  html = "<div id='" + divid + "'>▼</div><div><table id='" + tableid + "'><thead>Number of published venues: " + size + "</thead>"
-
+  html = "▼<div></br><table id='" + tableid + "'><thead><strong>Number of published venues: </strong>" + size + "</thead>"
+  // <div id='" + divid + "'>▼</div>
   // span.innerHTML = "Number of published venues: " + size + "</br>"
   venues.forEach(function(item, index){
     var name = item.name;
@@ -120,7 +121,7 @@ function httpGet()
     // generateVenuePage(link, name);// generateVenuePage(link, name);
     tr = $('<tr/>')
             tr.append("<td>" + ranking + "</td>");
-            tr.append("<td><span id='" + hoverid + "'>► </span><span>" + name + "</span></td>");
+            tr.append("<td><span>" + name + " </span><span id='" + hoverid + "'>► </span></td>");
             tr.append("<td>" + country + "</td>");
             $('table').append(tr);
             // $('table').append(venuecontent);

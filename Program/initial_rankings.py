@@ -12,9 +12,9 @@ ranking_names = db.c.fetchall()
 university_list = []
 score_list = []
 
-# Reads initial ranking from the files, calculates scores and tries to add everything to the database.
 
 def add_initial_universities():
+    # Reads initial ranking from the files, calculates scores and tries to add everything to the database.
     for uni in universities:
         id = uni[0]
         name = uni[1]
